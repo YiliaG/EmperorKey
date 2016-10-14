@@ -1,0 +1,43 @@
+body {
+    background-color: #f4f4f4;
+}
+.ek-layout-wrapper{
+	max-width: 1600px;
+    min-width: 320px;
+    width: 100%;
+}
+.layout-container{
+	background-color: #fff;
+    padding-bottom: 20px;
+}
+
+.ek-header-footer{
+	background: #e1dacb;
+}
+/*.ek-header-footer.navbar{
+	height: 192px;
+}*/
+.navIcon .icon{
+	font-size: 24px;
+	padding-right: 30px;
+}
+/***** 通用  *****/
+ul,ul li{
+	list-style: none;
+}
+.pt10{
+	padding-top: 10px;
+}
+.pt30{
+	padding-top: 30px;
+}
+.ptb30{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.pd20{
+	padding: 20px;
+}
+.pt40{
+	padding-top: 40px;
+}

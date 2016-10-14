@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ForRent</title>
+    <!-- stylesheet start-->
+    <link href="css/EK_bootstrap.css" rel="stylesheet">
+    <link href="css/font/iconfont.css" rel="stylesheet">
+    <link href="css/selectpick.css" rel="stylesheet">
+    <link href="css/EK_y.css" rel="stylesheet">
+    <!-- stylesheet end-->
+    <!-- script start-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- script end-->
+</head>
+
+<body>
+    <div class="ek-layout-wrapper center-block">
+        <header class="ek-header-footer navbar" role="banner">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
+                        </div>
+                        <!-- Collect the nav links for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse">
+                            <ul class="nav navbar-nav pt40">
+                                <li class="active"><a href="#">FOR rent</a></li>
+                                <li><a href="#">thailand guide</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">our services</a></li>
+                                <li><a href="#">subscribe</a></li>
+                                <li>
+                                    <div class="selectstyle pt10">
+                                        <select id="switch-lang">
+                                            <option value="ENGLISH">USD</option>
+                                            <option value="CHINA">HKD</option>
+                                        </select>
+                                    </div>
+                                </li>
+                                <script type="text/javascript">
+                                $(function() {
+                                    $("#switch-lang").selectpick();
+
+                                });
+                                </script>
+                            </ul>
+                            <ul class="navbar-right navIcon">
+                                <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                                <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                                <li><a href="#"><i class="icon icon-linkedin"></i></a></li>
+                                <li><a href="#"><i class="icon icon-wechat"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>  
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </header>
+    </div>
+    <!-- script start-->
+    <script src="js/selectpick.js"></script>
+    <!-- script end-->
+</body>
+
+</html>
