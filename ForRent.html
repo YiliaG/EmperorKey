@@ -20,56 +20,291 @@
 
 <body>
     <div class="ek-layout-wrapper center-block">
-        <header class="ek-header-footer navbar" role="banner">
+        <!-- header start -->
+        <header class="ek-header navbar" role="banner">
             <nav class="navbar navbar-default" role="navigation">
                 <div class="container-fluid">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
-                        </div>
-                        <!-- Collect the nav links for toggling -->
-                        <div class="collapse navbar-collapse" id="navbar-collapse">
-                            <ul class="nav navbar-nav pt40">
-                                <li class="active"><a href="#">FOR rent</a></li>
-                                <li><a href="#">thailand guide</a></li>
-                                <li><a href="#">blog</a></li>
-                                <li><a href="#">about us</a></li>
-                                <li><a href="#">our services</a></li>
-                                <li><a href="#">subscribe</a></li>
-                                <li>
-                                    <div class="selectstyle pt10">
-                                        <select id="switch-lang">
-                                            <option value="ENGLISH">USD</option>
-                                            <option value="CHINA">HKD</option>
-                                        </select>
-                                    </div>
-                                </li>
-                                <script type="text/javascript">
-                                $(function() {
-                                    $("#switch-lang").selectpick();
-
-                                });
-                                </script>
-                            </ul>
-                            <ul class="navbar-right navIcon">
-                                <li><a href="#"><i class="icon icon-facebook"></i></a></li>
-                                <li><a href="#"><i class="icon icon-twitter"></i></a></li>
-                                <li><a href="#"><i class="icon icon-linkedin"></i></a></li>
-                                <li><a href="#"><i class="icon icon-wechat"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>  
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
+                    </div>
+                    <!-- Collect the nav links for toggling -->
+                    <div class="collapse navbar-collapse" id="navbar-collapse">
+                        <ul class="nav navbar-nav pt40">
+                            <li class="active"><a href="#">FOR rent</a></li>
+                            <li><a href="#">thailand guide</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">subscribe</a></li>
+                            <li>
+                                <div class="selectstyle pt10">
+                                    <select id="switch-lang">
+                                        <option value="">ENGLISH</option>
+                                        <option value="">CHINA</option>
+                                    </select>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="navbar-right navIcon">
+                            <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon icon-linkedin"></i></a></li>
+                            <li><a href="#"><i class="icon icon-wechat"></i></a></li>
+                        </ul>
+                    </div>
                     <!-- /.navbar-collapse -->
                 </div>
                 <!-- /.container-fluid -->
             </nav>
         </header>
+        <!-- header end -->
+        <!-- main start -->
+        <div class="bg-gray">
+            <div class="container">
+                <div class="row pt30">
+                    <div class="col-sm-6 col-xs-12">
+                        <h1>Properties For Rent</h1>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 ptb30">
+                        <form method="get" class="search-filter input-group pull-right" id="header_search" action="">
+                            <input type="search" class="form-control" placeholder="">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><span class="icon icon-search"></span></button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+                <hr>
+                <div class="row ptb20">
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="selectstyle">
+                            <select id="s-city">
+                                <option value="">ALL Cities</option>
+                                <option value="">thailand</option>
+                            </select>
+                        </div>
+                        <div class="selectstyle">
+                            <select id="s-project">
+                                <option value="">Projects</option>
+                                <option value="">1</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="selectstyle">
+                            <select id="s-type">
+                                <option value="">Type</option>
+                                <option value="">2</option>
+                            </select>
+                        </div>
+                        <div class="selectstyle">
+                            <select id="s-room">
+                                <option value="">Bedrooms</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="selectstyle">
+                            <select id="s-rental-value">
+                                <option value="">Rental Value</option>
+                                <option value="">2</option>
+                            </select>
+                        </div>
+                        <div class="selectstyle">
+                            <select id="s-terms">
+                                <option value="">Lease Terms</option>
+                                <option value="">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="pull-right ptb20">
+                            <button type="button" class="btn btn-transparent">LIST</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layout-main">
+            <div class="container">
+                <!-- 循環  開始 -->
+                <div class="row rent-list ptb40">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="scale"><img src="images/demo/forrent1.jpg" alt=""></div>
+                    </div>
+                    <div class="col-sm-8 col-xs-12">
+                        <h4 class="ptb20">Base Park West #07-02</h4>
+                        <dl class="dl-horizontal">
+                            <dt>Rental price</dt>
+                            <dd>THB4,000 / night</dd>
+                            <dd>THB 15,000 / month</dd>
+                            <dt>Location</dt>
+                            <dd>Sukhumvit 71, Bangkok</dd>
+                            <dt>Number of bedrooms: </dt>
+                            <dd>1-Bed</dd>
+                            <dt class="img-thumb pt30">
+                                <a href="#"><img src="images/demo/forrent2.jpg" alt=""><img src="images/demo/forrent3.jpg" alt=""><img src="images/demo/forrent4.jpg" alt=""></a>
+                            </dt>
+                            <dd class="pt40">
+                                <!-- modal start-->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-bg-gold" data-toggle="modal" data-target="#enquire1">ENQUIRE</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="enquire1" tabindex="-1" role="dialog" aria-labelledby="eqLabel1" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="eqLabel1">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal end-->
+                                <a href="#" class="plr20">Find out more...</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <!-- 循環  結束 -->
+                <div class="row rent-list ptb40">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="scale"><img src="images/demo/forrent2.jpg" alt=""></div>
+                    </div>
+                    <div class="col-sm-8 col-xs-12">
+                        <h4 class="ptb20">Park East #12-09</h4>
+                        <dl class="dl-horizontal">
+                            <dt>Rental price</dt>
+                            <dd>THB4,000 / night</dd>
+                            <dd>THB 15,000 / month</dd>
+                            <dt>Location</dt>
+                            <dd>Sukhumvit 71, Bangkok</dd>
+                            <dt>Number of bedrooms: </dt>
+                            <dd>1-Bed</dd>
+                            <dt class="img-thumb pt30">
+                                <a href="#"><img src="images/demo/forrent1.jpg" alt=""><img src="images/demo/forrent4.jpg" alt=""><img src="images/demo/forrent2.jpg" alt=""></a>
+                            </dt>
+                            <dd class="pt40">
+                                <!-- modal start-->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-bg-gold" data-toggle="modal" data-target="#enquire2">ENQUIRE</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="enquire2" tabindex="-1" role="dialog" aria-labelledby="eqLabel2" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="eqLabel2">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal end-->
+                                <a href="#" class="plr20">Find out more...</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="row rent-list ptb40">
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="scale"><img src="images/demo/forrent1.jpg" alt=""></div>
+                    </div>
+                    <div class="col-sm-8 col-xs-12">
+                        <h4 class="ptb20">Base Park West #07-02</h4>
+                        <dl class="dl-horizontal">
+                            <dt>Rental price</dt>
+                            <dd>THB4,000 / night</dd>
+                            <dd>THB 15,000 / month</dd>
+                            <dt>Location</dt>
+                            <dd>Sukhumvit 71, Bangkok</dd>
+                            <dt>Number of bedrooms: </dt>
+                            <dd>1-Bed</dd>
+                            <dt class="img-thumb pt30">
+                                <a href="#"><img src="images/demo/forrent2.jpg" alt=""><img src="images/demo/forrent1.jpg" alt=""><img src="images/demo/forrent4.jpg" alt=""></a>
+                            </dt>
+                            <dd class="pt40">
+                                <!-- modal start-->
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-bg-gold" data-toggle="modal" data-target="#enquire3">ENQUIRE</button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="enquire3" tabindex="-1" role="dialog" aria-labelledby="eqLabel3" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                <h4 class="modal-title" id="eqLabel3">Modal title</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- modal end-->
+                                <a href="#" class="plr20">Find out more...</a>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- select js start-->
+        <script type="text/javascript">
+        $(function() {
+            $("#switch-lang , #s-city , #s-project,#s-type,#s-room,#s-rental-value,#s-terms").selectpick();
+
+        });
+        </script>
+        <!-- select js end-->
+        <!-- main end -->
+        <!-- footer start -->
+        <footer class="ek-footer bg-gray footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <ul class="ul-float text-uppercase">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Press Room</a></li>
+                            <li><a href="#">site map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 text-right">
+                        <ul class="ul-float text-uppercase">
+                            <li><a href="#">Terms of Use</a></li>
+                            <li>|</li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
     </div>
     <!-- script start-->
     <script src="js/selectpick.js"></script>
