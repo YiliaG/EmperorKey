@@ -1341,7 +1341,7 @@ mark,
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #286090;
+  color: #977f52;
 }
 .text-success {
   color: #3c763d;
@@ -2981,7 +2981,7 @@ select[multiple].input-lg {
   .form-horizontal .control-label {
     padding-top: 7px;
     margin-bottom: 0;
-    text-align: right;
+    /*text-align: right;*/
   }
 }
 .form-horizontal .has-feedback .form-control-feedback {
@@ -6004,7 +6004,7 @@ button.close {
 }
 @media (min-width: 768px) {
   .modal-dialog {
-    width: 600px;
+    width: 660px;
     margin: 30px auto;
   }
   .modal-content {

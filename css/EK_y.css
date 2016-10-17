@@ -101,7 +101,9 @@ ul,
 ul li {
     list-style: none;
 }
-
+.pd0{
+    padding: 0;
+}
 .pt10 {
     padding-top: 10px;
 }
@@ -170,10 +172,15 @@ ul li {
 .text-black{
 	color: #505050;
 }
+.text-whilte{
+    color: #fff;
+}
 .text-gold {
     color: #977f52;
 }
-
+.width90{
+    width: 90%;
+}
 
 /***** 通用  e*****/
 
@@ -228,8 +235,14 @@ ul li {
 	padding-top: 3px;
 	padding-bottom: 3px;
 }
+.btn-cancel{
+    background: none;
+}
 .enquire-sbm{
+
 	background: #d8c9ae;
+    margin-left: 40px;
+    color: #606060;
 }
 .modal.fade{
 	background: rgba(151,127,82,0.5)!important;
@@ -238,9 +251,19 @@ ul li {
 	background: #977f52;
 	color: #fff;
 }
+dd .selectpick_div_box{
+    background: #fff;
+
+}
 form label{
 	font-family: "montserratlight";
 	font-weight: normal;
+}
+.form-rentInfo{
+    background: rgba(255,255,255,.3);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 /***** forrent  e*****/
 
