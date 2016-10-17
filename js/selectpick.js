@@ -9,7 +9,7 @@
       // selectpick的配置
       var selectpick_config = {
 		 //container:"body",//模拟select生成的DIV存放的父容器
-         height: 30,
+         height: 34,
          //width: //$('select.select_hide').parent().width(),
         // optionColor: "#3BAFDA",
         // selectedColor:"#3BAFDA",

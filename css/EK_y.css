@@ -71,7 +71,9 @@
 .bg-gray {
     background: #f6f4ef;
 }
-
+.opacity0{
+	opacity: 0;
+}
 
 /***** footer  s*****/
 
@@ -139,7 +141,9 @@ ul li {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-
+.pd40{
+	padding: 40px;
+}
 .mt30 {
     margin-top: 30px;
 }
@@ -209,8 +213,6 @@ ul li {
     color: #fff;
     min-width: 100px;
     border-radius: 0;
-    padding-top: 3px;
-    padding-bottom: 3px;
 }
 
 .img-thumb img {
@@ -222,8 +224,24 @@ ul li {
 .rent-list + .rent-list {
     border-top: 1px solid #d7d7d7;
 }
-
-
+.enquire{
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.enquire-sbm{
+	background: #d8c9ae;
+}
+.modal.fade{
+	background: rgba(151,127,82,0.5)!important;
+}
+.modal-body{
+	background: #977f52;
+	color: #fff;
+}
+form label{
+	font-family: "montserratlight";
+	font-weight: normal;
+}
 /***** forrent  e*****/
 
 /***** media query  s*****/
