@@ -1,94 +1,161 @@
-body {
-    background-color: #f4f4f4;
-    font-size: 14px;
+/*******  字體導入 s *******/
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../css/font/montserrat-bold-webfont.eot');
+    src: url('../css/font/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../css/font/montserrat-bold-webfont.woff2') format('woff2'), url('../css/font/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-@media (max-width: 767px) {
-  body {
-    font-size: 12px;
-	}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../css/font/montserrat-regular-webfont.eot');
+    src: url('../css/font/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../css/font/montserrat-regular-webfont.woff2') format('woff2'), url('../css/font/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
-.ek-layout-wrapper{
-	max-width: 1600px;
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../css/font/montserrat-light-webfont.eot');
+    src: url('../css/font/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'), url('../css/font/montserrat-light-webfont.woff2') format('woff2'), url('../css/font/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fontbold{
+	font-family: 'montserratbold'!important;
+}
+.fontregular{
+	font-family: 'montserratregular'!important;
+}
+.fontlight{
+	font-family: 'montserratlight'!important;
+}
+/*******  字體導入 e *******/
+
+.ek-layout-wrapper {
+    max-width: 1600px;
     min-width: 320px;
     width: 100%;
 }
-.layout-main{
-	background-color: #fff;
+
+.layout-main {
+    background-color: #fff;
     padding-bottom: 30px;
 }
 
 .ek-header,
-.ek-footer{
-	background: #e1dacb;
-	padding-top: 10px;
+.ek-footer {
+    background: #e1dacb;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
-/*.ek-header-footer.navbar{
-	height: 192px;
-}*/
-.navIcon .icon{
-	font-size: 24px;
-	padding-right: 30px;
+
+.navbar-nav .selectpick_div_box {
+    background: #faf9f6;
+    width: 90px;
+    color: #977f52;
 }
-.bg-gray{
-	background: #f6f4ef;
+
+.navbar-nav .selectpick_options {
+    width: 90px!important;
 }
+
+.navIcon .icon {
+    font-size: 24px;
+    padding-right: 30px;
+}
+
+.bg-gray {
+    background: #f6f4ef;
+}
+
+
 /***** footer  s*****/
-.ul-float li{
-	display: inline-block;
-	padding: 10px;
+
+.ul-float li {
+    display: inline-block;
+    padding: 10px;
 }
-.footer a{
-	color: #606060;
-	font-size: 12px;
+
+.footer a {
+    color: #606060;
+    font-size: 12px;
 }
-.footer a:hover{
-	color: #977f52;
+
+.footer a:hover {
+    color: #977f52;
 }
+
+
 /***** footer  e*****/
 
+
 /***** 通用  s*****/
-ul,ul li{
-	list-style: none;
+
+ul,
+ul li {
+    list-style: none;
 }
-.pt10{
-	padding-top: 10px;
+
+.pt10 {
+    padding-top: 10px;
 }
-.ptb20{
-	padding-top: 20px;
-	padding-bottom: 20px;
+
+.ptb20 {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.plr20{
-	padding-left: 20px;
-	padding-right: 20px;
+
+.plr20 {
+    padding-left: 20px;
+    padding-right: 20px;
 }
-.pt30{
-	padding-top: 30px;
+
+.pt30 {
+    padding-top: 30px;
 }
-.ptb30{
-	padding-top: 30px;
-	padding-bottom: 30px;
+
+.pl30 {
+    padding-left: 30px;
 }
-.pd20{
-	padding: 20px;
+
+.ptb30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.pt40{
-	padding-top: 40px;
+
+.pd20 {
+    padding: 20px;
 }
-.ptb40{
-	padding-top: 40px;
-	padding-bottom: 40px;
+
+.pt40 {
+    padding-top: 40px;
 }
-.scale{
-	overflow: hidden;
+
+.ptb40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-.scale img{
-	    -webkit-transition: all .3s ease-in-out;
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.scale {
+    overflow: hidden;
+}
+
+.scale img {
+    -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     width: 100%;
 }
+
 .scale:hover img {
     -webkit-transform: scale(1.03, 1.03);
     -moz-transform: scale(1.03, 1.03);
@@ -96,50 +163,107 @@ ul,ul li{
     -o-transform: scale(1.03, 1.03);
     transform: scale(1.03, 1.03);
 }
-.text-gold{
-	color: #977f52;
+.text-black{
+	color: #505050;
 }
+.text-gold {
+    color: #977f52;
+}
+
+
 /***** 通用  e*****/
 
+
 /***** forrent  s*****/
+
 .search-filter {
     max-width: 342px;
 }
-.search-filter .btn-default{
-	outline: 0;
-	color: #977f52;
-	border:0;
-}
-.search-filter .btn-default:focus{
-	outline:none;
-	color: #977f52;
-	border:0;
+
+.search-filter .btn-default {
+    outline: 0;
+    color: #977f52;
+    border: 0;
 }
 
-.selectstyle{
-	width: 120px;
+.search-filter .btn-default:focus {
+    outline: none;
+    color: #977f52;
+    border: 0;
 }
-.btn-transparent{
-	background: transparent;
-	border:1px solid #977f52;
-	min-width: 140px;
-	border-radius: 0;
-	color: #977f52;
+
+.selectstyle {
+    width: 120px;
 }
-.btn-bg-gold{
-	background: #977f52;
-	color: #fff;
-	min-width: 100px;
-	border-radius: 0;
-	padding-top: 3px;
-	padding-bottom: 3px;
+
+.btn-transparent {
+    background: transparent;
+    border: 1px solid #977f52;
+    min-width: 140px;
+    border-radius: 0;
+    color: #977f52;
 }
-.img-thumb img{
-	width: 45px;
-	height: 45px;
-	margin-right: 5px;
+
+.btn-bg-gold {
+    background: #977f52;
+    color: #fff;
+    min-width: 100px;
+    border-radius: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
-.rent-list + .rent-list{
-	border-top: 1px solid #d7d7d7;
+
+.img-thumb img {
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
 }
+
+.rent-list + .rent-list {
+    border-top: 1px solid #d7d7d7;
+}
+
+
 /***** forrent  e*****/
+
+/***** media query  s*****/
+@media (max-width: 768px) {
+    .navbar-right.navIcon li {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        display: inline-block;
+        margin-left: 0px;
+        padding: 0 0 10px 0;
+    }
+    .pt30 {
+    padding-top: 20px;
+}
+
+.pl30 {
+    padding-left: 10px;
+}
+
+.ptb30 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.pd20 {
+    padding: 20px;
+}
+
+.pt40 {
+    padding-top: 30px;
+}
+
+.ptb40 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+}
+/***** media query  e*****/

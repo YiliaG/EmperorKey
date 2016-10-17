@@ -91,7 +91,7 @@ font-size: 12px;
 .selectpick_options li{cursor:pointer;}
 .selectpick_options li label{cursor:pointer;}
 .selectpick_div{width:100%!important}
-.selectpick_div_box{display:inline-block; *zoom:1; *display:inline;position:relative;width:100%}
+.selectpick_div_box{display:inline-block; *zoom:1; *display:inline;position:relative;width:100%;color: #505050;}
 .bg-black10 .selectpick_div_box{background-color:#f2e0cc;color:#101010}
 .y-currency-div .selectpick_div_box{top:10px}
 #y-currency1{margin-left:5px}
