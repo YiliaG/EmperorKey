@@ -38,8 +38,9 @@
                         <!-- Collect the nav links for toggling -->
                         <div class="collapse navbar-collapse col-md-10 col-xs-12" id="navbar-collapse">
                             <div class="row">
-                                <div class="col-md-offset-2 col-md-8">
-                                    <ul class="nav navbar-nav pt40">
+                                <div class="col-md-offset-1 col-md-10">
+                                    <ul class="nav navbar-nav pt40 text-uppercase">
+                                        <!-- 處於當前頁面需要在li標籤加上active -->
                                         <li class="active"><a href="#">FOR rent</a></li>
                                         <li><a href="#">thailand guide</a></li>
                                         <li><a href="#">blog</a></li>
@@ -56,7 +57,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="col-md-2">
+                                <div class="col-md-1">
                                     <ul class="navbar-right navIcon">
                                         <li><a href="#"><i class="icon icon-facebook"></i></a></li>
                                         <li><a href="#"><i class="icon icon-twitter"></i></a></li>
@@ -78,7 +79,7 @@
             <div class="container">
                 <div class="row pt30">
                     <div class="col-sm-6 col-xs-12">
-                        <h1 class="text-black">Properties For Rent</h1>
+                        <h1 class="title-h">Properties For Rent</h1>
                     </div>
                     <div class="col-sm-6 col-xs-12 ptb30">
                         <form method="get" class="search-filter input-group pull-right" id="header_search" action="">
@@ -90,7 +91,7 @@
                     </div>
                 </div>
                 <hr>
-                <div class="row ptb20">
+                <div class="row ptb20 fontregular">
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="selectstyle">
                             <select id="s-city">
@@ -141,7 +142,7 @@
                 </div>
             </div>
         </div>
-        <div class="layout-main">
+        <div class="layout-main pb30">
             <div class="container">
                 <!-- 循環  開始 -->
                 <div class="row rent-list ptb40">
@@ -150,7 +151,7 @@
                     </div>
                     <div class="col-sm-8 col-xs-12">
                         <h4 class="ptb20">Base Park West #07-02</h4>
-                        <dl class="dl-horizontal">
+                        <dl class="dl-horizontal fontregular">
                             <dt>Rental price</dt>
                             <dd>THB4,000 / night</dd>
                             <dd>THB 15,000 / month</dd>
@@ -173,7 +174,7 @@
                                             <div class="modal-header pd40 text-gold">
                                                 <!-- <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
                                                 <h4 class="modal-title" id="eqLabel1">Contact Our Sales Representative</h4>
-                                                <div class="width90 center-block mt30">
+                                                <div class="width90 mt30">
                                                     <p class="fontlight">Varun Pawa (English/Thai) <a href="tel:66133748811">+66 13 374 8811</a></p><p class="fontlight">Rina Nagamatsu (Japanese Specialist) <a href="tel:66133748811">+66 113 561 7131</a></p>
                                                 </div>
                                             </div>
@@ -181,7 +182,7 @@
                                         <div class="modal-content">
                                             <div class="modal-body pd40">
                                                 <h4 class="text-whilte">Or Leave your information here:</h4>
-                                                <div class="width90 center-block form-rentInfo">Condo for Rent #BPW001</div>
+                                                <div class="width90 form-rentInfo">Condo for Rent #BPW001</div>
                                                 <form class="form-horizontal" role="form" id="rentEnquire">
                                                     <div class="row">
                                                         <div class="col-sm-12">
@@ -254,7 +255,7 @@
                     </div>
                     <div class="col-sm-8 col-xs-12">
                         <h4 class="ptb20">Park East #12-09</h4>
-                        <dl class="dl-horizontal">
+                        <dl class="dl-horizontal fontregular">
                             <dt>Rental price</dt>
                             <dd>THB4,000 / night</dd>
                             <dd>THB 15,000 / month</dd>
@@ -340,17 +341,19 @@
                 </div>
             </div>
         </div>
+        
         <!-- select js start-->
         <script type="text/javascript">
         $(function() {
-            $("#switch-lang , #s-city , #s-project,#s-type,#s-room,#s-rental-value,#s-terms,#s-lease-period").selectpick();
-
+            $("#s-city,#s-project,#s-type,#s-room,#s-rental-value,#s-terms,#s-lease-period").selectpick();
         });
         </script>
         <!-- select js end-->
+
         <!-- main end -->
+
         <!-- footer start -->
-        <footer class="ek-footer bg-gray footer">
+        <footer class="ek-footer footer">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
@@ -374,6 +377,11 @@
     </div>
     <!-- script start-->
     <script src="js/selectpick.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#switch-lang").selectpick();
+        });
+        </script>
     <!-- script end-->
 </body>
 

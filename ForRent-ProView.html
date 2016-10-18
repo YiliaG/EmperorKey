@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>ForRent-View</title>
+    <!-- stylesheet start-->
+    <link href="css/EK_bootstrap.css" rel="stylesheet">
+    <link href="css/font/iconfont.css" rel="stylesheet">
+    <link href="css/selectpick.css" rel="stylesheet">
+    <link href="css/EK_y.css" rel="stylesheet">
+    <!-- stylesheet end-->
+    <!-- script start-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- script end-->
+</head>
+
+<body>
+    <div class="ek-layout-wrapper center-block">
+        <!-- header start -->
+        <header class="ek-header navbar fontbold" role="banner">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header col-md-2 col-xs-12">
+                            <button type="button" class="navbar-toggle collapsed mt30" data-toggle="collapse" data-target="#navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
+                        </div>
+                        <!-- Collect the nav links for toggling -->
+                        <div class="collapse navbar-collapse col-md-10 col-xs-12" id="navbar-collapse">
+                            <div class="row">
+                                <div class="col-md-offset-1 col-md-10">
+                                    <ul class="nav navbar-nav pt40 text-uppercase">
+                                        <li class="active"><a href="#">FOR rent</a></li>
+                                        <li><a href="#">thailand guide</a></li>
+                                        <li><a href="#">blog</a></li>
+                                        <li><a href="#">about us</a></li>
+                                        <li><a href="#">our services</a></li>
+                                        <li><a href="#">subscribe</a></li>
+                                        <li class="pt10">
+                                            <div class="selectstyle pl30">
+                                                <select id="switch-lang">
+                                                    <option value="">ENGLISH</option>
+                                                    <option value="">CHINA</option>
+                                                </select>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-1">
+                                    <ul class="navbar-right navIcon">
+                                        <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                                        <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                                        <li><a href="#"><i class="icon icon-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="icon icon-wechat"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </header>
+        <!-- header end -->
+
+        <!-- main start -->
+        <div class="layout-main">
+            <div class="banner-img"><img src="images/demo/rentview.jpg" alt=""></div>  
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-xs-12 pb30">
+                        <h1 class="title-h">Base Park West - #BPW001</h1>
+                        <!-- ENQUIRE BUTTON START -->
+                        <div class="ptb20">
+                            <!-- modal start-->
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-bg-gold" data-toggle="modal" data-target="#enquire1">ENQUIRE / Arrange Viewing</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="enquire1" tabindex="-1" role="dialog" aria-labelledby="eqLabel1" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    
+                                    <div class="modal-content">
+                                        <div class="modal-header pd40 text-gold">
+                                            <!-- <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
+                                            <h4 class="modal-title" id="eqLabel1">Contact Our Sales Representative</h4>
+                                            <div class="width90 mt30">
+                                                <p class="fontlight">Varun Pawa (English/Thai) <a href="tel:66133748811">+66 13 374 8811</a></p><p class="fontlight">Rina Nagamatsu (Japanese Specialist) <a href="tel:66133748811">+66 113 561 7131</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-content">
+                                        <div class="modal-body pd40">
+                                            <h4 class="text-whilte">Or Leave your information here:</h4>
+                                            <div class="width90 form-rentInfo">Condo for Rent #BPW001</div>
+                                            <form class="form-horizontal" role="form" id="rentEnquire">
+                                                <div class="row">
+                                                    <div class="col-sm-12">
+                                                      <div class="form-group">
+                                                        <label for="inputName" class="col-sm-1 control-label">name</label>
+                                                        <div class="col-sm-5">
+                                                          <input type="text" class="form-control" id="inputName" placeholder="">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                      <div class="form-group">
+                                                        <label for="inputTel" class="col-sm-2 control-label">tel</label>
+                                                        <div class="col-sm-10">
+                                                          <input type="tel" class="form-control" id="inputTel" placeholder="">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                                                            <div class="col-sm-10">
+                                                              <input type="email" class="form-control" id="inputEmail" placeholder="">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                      <div class="form-group">
+                                                        <label for="inputBudget" class="col-sm-2 control-label">Budget</label>
+                                                        <div class="col-sm-10">
+                                                          <input type="text" class="form-control" id="inputBudget" placeholder="">
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group">
+                                                            <label for="inputBudget" class="col-sm-6 control-label">Lease Period</label>
+                                                            <div class="selectstyle col-sm-6 pd0">
+                                                                <select id="s-lease-period">
+                                                                    <option value="">Type</option>
+                                                                    <option value="">2</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12">
+                                                        
+                                                            <div class=" pull-right ptb30">
+                                                                <button type="button" class="btn btn-cancel" data-dismiss="modal">cancel</button>
+                                                              <button type="submit" class="btn btn-bg-gold enquire-sbm">Submit</button>
+                                                            </div>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- modal end-->
+                        </div>
+                        <!-- ENQUIRE BUTTON END -->
+                        <div>
+                            <ul class="nav nav-tabs pb30">
+                                <li class="active"><a href="#ab-unit" data-toggle="tab">About this unit</a></li>
+                                <li><a href="#ab-project" data-toggle="tab">Project info</a></li>
+                                <li><a href="#ab-location" data-toggle="tab">Location</a></li>
+                                <li><a href="#ab-photo" data-toggle="tab">Photo Album</a></li>
+
+                            </ul>
+                            <div class="tab-content">
+                                <!-- ab-unit start -->
+                                <div class="tab-pane fade in active" id="ab-unit">
+                                    <dl class="dl-horizontal">
+                                        <dt>Room Type :</dt>
+                                        <dd>1 Bedroom 1 Bathroom</dd>
+                                        <dt>Area :</dt>
+                                        <dd>30 sqm</dd>
+                                        <dt>Floor : </dt>
+                                        <dd>36th</dd>
+                                        <dt>Furniture :</dt>
+                                        <dd>Fully Furnished</dd>
+                                        <dt>Rental Price : </dt>
+                                        <dd>THB 15,000</dd>
+                                        <dt>Developer :</dt>
+                                        <dd>Sansiri</dd>
+                                        <dt>View :</dt>
+                                        <dd>Pool</dd>
+                                        <dt>Facilities :</dt>
+                                        <dd>Swimming Pool, Gym, Library</dd>
+                                        <dt>Available for Short-term lease :</dt>
+                                        <dd>Yes</dd>
+                                    </dl>
+                                </div>
+                                <!-- ab-unit end -->
+
+                                <!-- ab-project start -->
+                                <div class="tab-pane fade" id="ab-project">
+                                    <p>The Base Park West is a premium condominium project developed by Sansiri, the leading property developer in Thailand. The condominium has full resort facilities including a gym, swimming pool, laundry room, car park and lobby.</p>
+                                    <div><img src="images/demo/rentview1.jpg" alt=""></div>
+                                    <dl class="dl-horizontal">
+                                        <dt>Completion date :</dt>
+                                        <dd>Sept 2015</dd>
+                                        <dt>Unit type available :</dt>
+                                        <dd>1 Bed 1 Bath</dd>
+                                        <dd>2 Bed 1 Bath</dd>
+                                        <dd>2 Bed 2 Bath</dd>
+                                        <dt>Rental price ranging from : </dt>
+                                        <dd>THB14,000 - 30,000/mo</dd>
+                                        <dt>Nearest BTS:</dt>
+                                        <dd>On Nut</dd>
+                                        <dt>Surroundings : </dt>
+                                        <dd>Bangkok Prep International School</dd>
+                                        <dd>HABITO Mall</dd>
+                                        <dd>7-11 convenience store</dd>
+                                        <dd>Big C Extra</dd>
+                                    </dl>
+                                </div>
+                                <!-- ab-project end -->
+
+                                <!-- ab-location start -->
+                                <div class="tab-pane fade" id="ab-location">
+                                    <div class="center-block">this is map</div>
+                                </div>
+                                <!-- ab-location end -->
+
+                                <!-- ab-photo start -->
+                                <div class="tab-pane fade" id="ab-photo">
+                                    <div class="row">
+                                        <div class="col-sm-4 col-xs-12">
+                                            <a class="image-link" href="images/demo/forrent3.jpg" data-lightbox="lightbox-set"><img class="img-responsive" src="images/demo/forrent3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12">
+                                            <a class="image-link" href="images/demo/forrent2.jpg" data-lightbox="lightbox-set"><img class="img-responsive" src="images/demo/forrent2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12">
+                                            <a class="image-link" href="images/demo/forrent1.jpg" data-lightbox="lightbox-set"><img class="img-responsive" src="images/demo/forrent1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12">
+                                            <a class="image-link" href="images/demo/forrent1.jpg" data-lightbox="lightbox-set"><img class="img-responsive" src="images/demo/forrent1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12">
+                                            <a class="image-link" href="images/demo/forrent4.jpg" data-lightbox="lightbox-set"><img class="img-responsive" src="images/demo/forrent4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col-sm-4 col-xs-12">
+                                            <a class="image-link" href="images/demo/forrent2.jpg" data-lightbox="lightbox-set"><img class="img-responsive" src="images/demo/forrent2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ab-photo end -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12 bg-gray sidebar hidden-xs">
+                        <h3 class="">Base Park West #07-02</h3>
+                        <a href="#" class="pt10">
+                            <div class="scale">
+                                <img src="images/demo/forrent3.jpg" alt="">
+                            </div>
+                            <h5 class="text-black">Base Park West  #16-07</h5>
+                        </a>
+                        <a href="#" class="pt10">
+                            <div class="scale">
+                                <img src="images/demo/forrent3.jpg" alt="">
+                            </div>
+                            <h5 class="text-black">Base Park West  #16-07</h5>
+                        </a>
+                        <div class="pt30 pull-right">
+                            <a href="#" class="btn btn-bg-gold" data-toggle="modal" data-target="#enquire1">View All</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- js start-->
+        <link href="css/lightbox.css" rel="stylesheet" type="text/css">
+        <script src="js/lightbox.min.js"></script>
+        <!-- js end-->
+        <!-- main end -->
+        <!-- footer start -->
+        <footer class="ek-footer footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <ul class="ul-float text-uppercase">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Press Room</a></li>
+                            <li><a href="#">site map</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 text-right">
+                        <ul class="ul-float text-uppercase">
+                            <li><a href="#">Terms of Use</a></li>
+                            <li>|</li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+    </div>
+    <!-- script start-->
+    <script src="js/selectpick.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $("#switch-lang").selectpick();
+        });
+    </script>
+    <!-- script end-->
+</body>
+
+</html>
