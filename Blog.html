@@ -33,19 +33,20 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
+                            <a class="navbar-brand" href="HomePage.html"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
                         </div>
                         <!-- Collect the nav links for toggling -->
                         <div class="collapse navbar-collapse col-md-10 col-xs-12" id="navbar-collapse">
                             <div class="row">
                                 <div class="col-md-offset-1 col-md-10">
-                                    <ul class="nav navbar-nav pt40 text-uppercase">
-                                        <li><a href="#">FOR rent</a></li>
-                                        <li><a href="#">thailand guide</a></li>
-                                        <li class="active"><a href="#">blog</a></li>
-                                        <li><a href="#">about us</a></li>
-                                        <li><a href="#">our services</a></li>
-                                        <li><a href="#">subscribe</a></li>
+                                    <ul class="nav navbar-nav text-uppercase">
+                                        <!-- 處於當前頁面需要在li標籤加上active -->
+                                        <li><a href="ForRent.html">FOR rent</a></li>
+                                        <li><a href="ThailandGuide.html">thailand guide</a></li>
+                                        <li class="active"><a href="Blog.html">blog</a></li>
+                                        <li><a href="AboutUs.html">about us</a></li>
+                                        <li><a href="OurServices.html">our services</a></li>
+                                        <li><a href="javascript:void(0)" data-toggle="modal" data-target="#subscribe-form">subscribe</a></li>
                                         <li class="pt10">
                                             <div class="selectstyle pl30">
                                                 <select id="switch-lang">
@@ -55,6 +56,71 @@
                                             </div>
                                         </li>
                                     </ul>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="subscribe-form" abindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <!-- 此處  動態變化 start-->
+                                                    <h4 class="text-white pl30 pt30">Enquire the #BPW001 condo</h4>
+                                                    <!-- 此處  動態變化 end-->
+                                                </div>
+                                                <div class="modal-body pd40">
+                                                    <form class="form-horizontal" role="form" id="rentEnquire">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="first-n" class="col-sm-4 control-label">First Name</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="first-n" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="last-n" class="col-sm-4 control-label">Last Name</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="last-n" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="phone" class="col-sm-4 control-label">Phone</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="phone" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="inputEmail" class="col-sm-4 control-label">Email</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="email" class="form-control" id="inputEmail" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-12 control-label">Message</label>
+                                                                    <div class="col-sm-12">
+                                                                        <textarea class="form-control" rows="6"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class=" pull-right ptb30 fontregular text-center">
+                                                                    <button type="submit" class="btn btn-bg-gold enquire-sbm home-enquire">Submit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- modal end-->
                                 </div>
                                 <div class="col-md-1">
                                     <ul class="navbar-right navIcon">
@@ -77,7 +143,8 @@
         <div class="layout-main pb30">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8 col-xs-12 pt10"><h1 class="title-h">Blog</h1></div>
+                    <div class="col-sm-8 col-xs-12 pt10">
+                        <h1 class="title-h">Blog</h1></div>
                     <div class="col-sm-4 col-xs-12 pt30">
                         <form method="get" class="search-filter input-group pull-right" id="header_search" action="">
                             <input type="search" class="form-control bg-input" placeholder="">
@@ -89,13 +156,13 @@
                 </div>
                 <div class="row ptb40">
                     <div class="col-sm-8 col-xs-12">
-                        
-                        <a href="#" class="displayblock">
+                        <a href="Blog-ActicleView.html" class="displayblock">
                             <div class="scale"><img src="images/demo/bloglist.jpg" alt=""></div>
                             <h2 class="pt10">A Title for the Newest Article</h2>
                             <p class="font12 text-primary">August 6, 2016</p>
                             <p class="fontlight text-primary ptb20">A dui eros a ipsum dolor phasellus est tempor ullamcorper a at elit himenaeos vehicula nascetur tincidunt integer non fusce elementum a conubia. Cras scelerisque est curabitur scelerisque dui a facilisi conubia cum vestibulum facilisis luctus consectetur parturient scelerisque enim sapien adipiscing nascetur scelerisque neque a est quis. </p>
-                            <div><a href="#">READ MORE</a><a href="#" class="pull-right"><i class="icon icon-share"></i></a></div>
+                            <div class="pull-left"><a href="#">READ MORE</a></div>
+                            <div class="pull-right text-right"><a href="#"><i class="icon icon-share"></i></a></div>
                         </a>
                     </div>
                     <div class="col-sm-4 col-xs-12 pl30">
@@ -119,50 +186,39 @@
                 </div>
                 <div class="row pt50">
                     <!-- 循環   開始 -->
-                    <a href="#" class="col-sm-4 col-xs-12 displayblock">
+                    <a href="#" class="col-sm-4 col-xs-12">
                         <div class="scale"><img src="images/demo/bloglist.jpg" alt=""></div>
                         <h3 class="text-black">Recent Article One</h3>
                     </a>
                     <!-- 循環   結束 -->
-
-                    <a href="#" class="col-sm-4 col-xs-12 displayblock">
+                    <a href="#" class="col-sm-4 col-xs-12">
                         <div class="scale"><img src="images/demo/bloglist.jpg" alt=""></div>
                         <h3 class="text-black">Recent Article Two</h3>
                     </a>
-                    <a href="#" class="col-sm-4 col-xs-12 displayblock">
+                    <a href="#" class="col-sm-4 col-xs-12">
                         <div class="scale"><img src="images/demo/bloglist.jpg" alt=""></div>
                         <h3 class="text-black">Recent Article Three</h3>
                     </a>
                 </div>
             </div>
         </div>
-
-        <!-- select js start-->
-        <script type="text/javascript">
-        $(function() {
-            $("#s-city , #s-project,#s-type,#s-room,#s-rental-value,#s-terms,#s-lease-period").selectpick();
-        });
-        </script>
-        <!-- select js end-->
-
         <!-- main end -->
-
         <!-- footer start -->
         <footer class="ek-footer footer">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 text-center">
                         <ul class="ul-float text-uppercase">
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Press Room</a></li>
-                            <li><a href="#">site map</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                            <li><a href="PressRoom.html">Press Room</a></li>
+                            <li><a href="SiteMap.html">site map</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 text-right">
                         <ul class="ul-float text-uppercase">
-                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="TermOfUse.html">Terms of Use</a></li>
                             <li>|</li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -173,10 +229,10 @@
     <!-- script start-->
     <script src="js/selectpick.js"></script>
     <script type="text/javascript">
-        $(function() {
-            $("#switch-lang").selectpick();
-        });
-        </script>
+    $(function() {
+        $("#switch-lang").selectpick();
+    });
+    </script>
     <!-- script end-->
 </body>
 

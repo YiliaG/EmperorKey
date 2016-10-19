@@ -33,19 +33,20 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
+                            <a class="navbar-brand" href="HomePage.html"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
                         </div>
                         <!-- Collect the nav links for toggling -->
                         <div class="collapse navbar-collapse col-md-10 col-xs-12" id="navbar-collapse">
                             <div class="row">
                                 <div class="col-md-offset-1 col-md-10">
-                                    <ul class="nav navbar-nav pt40 text-uppercase">
-                                        <li><a href="#">FOR rent</a></li>
-                                        <li><a href="#">thailand guide</a></li>
-                                        <li><a href="#">blog</a></li>
-                                        <li><a href="#">about us</a></li>
-                                        <li class="active"><a href="#">our services</a></li>
-                                        <li><a href="#">subscribe</a></li>
+                                    <ul class="nav navbar-nav text-uppercase">
+                                        <!-- 處於當前頁面需要在li標籤加上active -->
+                                        <li><a href="ForRent.html">FOR rent</a></li>
+                                        <li><a href="ThailandGuide.html">thailand guide</a></li>
+                                        <li><a href="Blog.html">blog</a></li>
+                                        <li><a href="AboutUs.html">about us</a></li>
+                                        <li class="active"><a href="OurServices.html">our services</a></li>
+                                        <li><a href="javascript:void(0)" data-toggle="modal" data-target="#subscribe-form">subscribe</a></li>
                                         <li class="pt10">
                                             <div class="selectstyle pl30">
                                                 <select id="switch-lang">
@@ -55,6 +56,71 @@
                                             </div>
                                         </li>
                                     </ul>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="subscribe-form" abindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <!-- 此處  動態變化 start-->
+                                                    <h4 class="text-white pl30 pt30">Enquire the #BPW001 condo</h4>
+                                                    <!-- 此處  動態變化 end-->
+                                                </div>
+                                                <div class="modal-body pd40">
+                                                    <form class="form-horizontal" role="form" id="rentEnquire">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="first-n" class="col-sm-4 control-label">First Name</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="first-n" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="last-n" class="col-sm-4 control-label">Last Name</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="last-n" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="phone" class="col-sm-4 control-label">Phone</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="phone" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="inputEmail" class="col-sm-4 control-label">Email</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="email" class="form-control" id="inputEmail" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-12 control-label">Message</label>
+                                                                    <div class="col-sm-12">
+                                                                        <textarea class="form-control" rows="6"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class=" pull-right ptb30 fontregular text-center">
+                                                                    <button type="submit" class="btn btn-bg-gold enquire-sbm home-enquire">Submit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- modal end-->
                                 </div>
                                 <div class="col-md-1">
                                     <ul class="navbar-right navIcon">
@@ -92,7 +158,6 @@
                         <ul class="list-disc">
                             <li>Mortgage application</li>
                         </ul>
-
                         <h4 class="text-primary">Move-in Package</h4>
                         <ul class="list-disc">
                             <li>Transfer of property title deed from developer to Purchaser</li>
@@ -106,7 +171,6 @@
                             <li>Airport transfer for personal inspection (if necessary)</li>
                             <li>Concierge service for Purchaser’s first trip to the unit (if necessary)</li>
                         </ul>
-
                         <h4 class="text-primary">Property Leasing and Management Package</h4>
                         <ul class="list-disc">
                             <li>Short-term leases (less than 1 month)</li>
@@ -125,7 +189,6 @@
                         <div class="mlr-15">
                             <img src="images/demo/serve2.jpg" alt="">
                         </div>
-
                         <h4 class="text-primary">Pre-Move-in Package</h4>
                         <ul class="list-disc">
                             <li>Property viewing and selection (for mid to long-term leases)</li>
@@ -135,7 +198,6 @@
                             <li>Mid-term leases (between 1-6 months)</li>
                             <li>Long-term leases (more than 6 months)</li>
                         </ul>
-
                         <h4 class="text-primary">Move-in Package (for Mid to Long-Term Leases)</h4>
                         <ul class="list-disc">
                             <li>Pre-move-in unit inspection for defects and flaws</li>
@@ -144,7 +206,6 @@
                             <li>Furniture package (for unfurnished units)</li>
                             <li>Logistic & delivery</li>
                         </ul>
-
                         <h4 class="text-primary">Move-in Package (for Short-Term Leases)</h4>
                         <ul class="list-disc">
                             <li>Airport transfer</li>
@@ -154,7 +215,6 @@
                             <li>Free Wifi</li>
                             <li>Neighborhood guide</li>
                         </ul>
-
                         <h4 class="text-primary">International or Domestic Relocation Package</h4>
                         <ul class="list-disc">
                             <li>Immigration & visas</li>
@@ -168,13 +228,6 @@
                 </div>
             </div>
         </div>
-        <!-- select js start-->
-        <script type="text/javascript">
-        $(function() {
-            $("#s-city , #s-project,#s-type,#s-room,#s-rental-value,#s-terms,#s-lease-period").selectpick();
-        });
-        </script>
-        <!-- select js end-->
         <!-- main end -->
         <!-- footer start -->
         <footer class="ek-footer footer">
@@ -182,17 +235,16 @@
                 <div class="row">
                     <div class="col-xs-12 text-center">
                         <ul class="ul-float text-uppercase">
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Press Room</a></li>
-                            <li><a href="#">site map</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                            <li><a href="PressRoom.html">Press Room</a></li>
+                            <li><a href="SiteMap.html">site map</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 text-right">
                         <ul class="ul-float text-uppercase">
-                            <!-- 處於當前頁面需要在li標籤加上active -->
-                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="TermOfUse.html">Terms of Use</a></li>
                             <li>|</li>
-                            <li class="active"><a href="#">Privacy Policy</a></li>
+                            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>

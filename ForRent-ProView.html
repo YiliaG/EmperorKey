@@ -33,19 +33,20 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
+                            <a class="navbar-brand" href="HomePage.html"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
                         </div>
                         <!-- Collect the nav links for toggling -->
                         <div class="collapse navbar-collapse col-md-10 col-xs-12" id="navbar-collapse">
                             <div class="row">
                                 <div class="col-md-offset-1 col-md-10">
-                                    <ul class="nav navbar-nav pt40 text-uppercase">
-                                        <li class="active"><a href="#">FOR rent</a></li>
-                                        <li><a href="#">thailand guide</a></li>
-                                        <li><a href="#">blog</a></li>
-                                        <li><a href="#">about us</a></li>
-                                        <li><a href="#">our services</a></li>
-                                        <li><a href="#">subscribe</a></li>
+                                    <ul class="nav navbar-nav text-uppercase">
+                                        <!-- 處於當前頁面需要在li標籤加上active -->
+                                        <li class="active"><a href="ForRent.html">FOR rent</a></li>
+                                        <li><a href="ThailandGuide.html">thailand guide</a></li>
+                                        <li><a href="Blog.html">blog</a></li>
+                                        <li><a href="AboutUs.html">about us</a></li>
+                                        <li><a href="OurServices.html">our services</a></li>
+                                        <li><a href="javascript:void(0)" data-toggle="modal" data-target="#subscribe-form">subscribe</a></li>
                                         <li class="pt10">
                                             <div class="selectstyle pl30">
                                                 <select id="switch-lang">
@@ -55,6 +56,71 @@
                                             </div>
                                         </li>
                                     </ul>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="subscribe-form" abindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <!-- 此處  動態變化 start-->
+                                                    <h4 class="text-white pl30 pt30">Enquire the #BPW001 condo</h4>
+                                                    <!-- 此處  動態變化 end-->
+                                                </div>
+                                                <div class="modal-body pd40">
+                                                    <form class="form-horizontal" role="form" id="rentEnquire">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="first-n" class="col-sm-4 control-label">First Name</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="first-n" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="last-n" class="col-sm-4 control-label">Last Name</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="last-n" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="phone" class="col-sm-4 control-label">Phone</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="phone" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="inputEmail" class="col-sm-4 control-label">Email</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="email" class="form-control" id="inputEmail" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-12 control-label">Message</label>
+                                                                    <div class="col-sm-12">
+                                                                        <textarea class="form-control" rows="6"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class=" pull-right ptb30 fontregular text-center">
+                                                                    <button type="submit" class="btn btn-bg-gold enquire-sbm home-enquire">Submit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- modal end-->
                                 </div>
                                 <div class="col-md-1">
                                     <ul class="navbar-right navIcon">
@@ -73,11 +139,9 @@
             </nav>
         </header>
         <!-- header end -->
-
         <!-- main start -->
         <div class="layout-main">
-            <div class="banner-img"><img src="images/demo/rentview.jpg" alt=""></div>  
-        
+            <div class="banner-img"><img src="images/demo/rentview.jpg" alt=""></div>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-xs-12 pb30">
@@ -86,62 +150,65 @@
                         <div class="ptb20">
                             <!-- modal start-->
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-bg-gold" data-toggle="modal" data-target="#enquire1">ENQUIRE / Arrange Viewing</button>
+                            <button type="button" class="btn btn-bg-gold" data-toggle="modal" data-target="#enquire-form">ENQUIRE / Arrange Viewing</button>
                             <!-- Modal -->
-                            <div class="modal fade" id="enquire1" tabindex="-1" role="dialog" aria-labelledby="eqLabel1" aria-hidden="true">
+                            <div class="modal fade" id="enquire-form" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
                                 <div class="modal-dialog">
-                                    
                                     <div class="modal-content">
-                                        <div class="modal-header pd40 text-gold">
-                                            <!-- <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> -->
-                                            <h4 class="modal-title" id="eqLabel1">Contact Our Sales Representative</h4>
+                                        <div class="modal-header pd40 text-gold bg-white">
+                                            <h4 class="modal-title">Contact Our Sales Representative</h4>
                                             <div class="width90 mt30">
-                                                <p class="fontlight">Varun Pawa (English/Thai) <a href="tel:66133748811">+66 13 374 8811</a></p><p class="fontlight">Rina Nagamatsu (Japanese Specialist) <a href="tel:66133748811">+66 113 561 7131</a></p>
+                                                <!-- 此處號碼和電郵動態變化 start-->
+                                                <p class="fontlight">Varun Pawa (English/Thai) <a href="tel:66133748811">+66 13 374 8811</a></p>
+                                                <p class="fontlight">Rina Nagamatsu (Japanese Specialist) <a href="tel:66133748811">+66 113 561 7131</a></p>
+                                                <!-- 此處號碼和電郵動態變化 end-->
                                             </div>
                                         </div>
                                     </div>
                                     <div class="modal-content">
                                         <div class="modal-body pd40">
-                                            <h4 class="text-whilte">Or Leave your information here:</h4>
+                                            <h4 class="text-white">Or Leave your information here:</h4>
+                                            <!-- 此處  動態變化 start-->
                                             <div class="width90 form-rentInfo">Condo for Rent #BPW001</div>
+                                            <!-- 此處  動態變化 end-->
                                             <form class="form-horizontal" role="form" id="rentEnquire">
                                                 <div class="row">
                                                     <div class="col-sm-12">
-                                                      <div class="form-group">
-                                                        <label for="inputName" class="col-sm-1 control-label">name</label>
-                                                        <div class="col-sm-5">
-                                                          <input type="text" class="form-control" id="inputName" placeholder="">
+                                                        <div class="form-group">
+                                                            <label for="inputName" class="col-sm-1 control-label">name</label>
+                                                            <div class="col-sm-5">
+                                                                <input type="text" class="form-control" id="inputName" placeholder="">
+                                                            </div>
                                                         </div>
-                                                      </div>
                                                     </div>
                                                     <div class="col-sm-6">
-                                                      <div class="form-group">
-                                                        <label for="inputTel" class="col-sm-2 control-label">tel</label>
-                                                        <div class="col-sm-10">
-                                                          <input type="tel" class="form-control" id="inputTel" placeholder="">
+                                                        <div class="form-group">
+                                                            <label for="inputTel" class="col-sm-2 control-label">tel</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="tel" class="form-control" id="inputTel" placeholder="">
+                                                            </div>
                                                         </div>
-                                                      </div>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <div class="form-group">
                                                             <label for="inputEmail" class="col-sm-2 control-label">Email</label>
                                                             <div class="col-sm-10">
-                                                              <input type="email" class="form-control" id="inputEmail" placeholder="">
+                                                                <input type="email" class="form-control" id="inputEmail" placeholder="">
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6">
-                                                      <div class="form-group">
-                                                        <label for="inputBudget" class="col-sm-2 control-label">Budget</label>
-                                                        <div class="col-sm-10">
-                                                          <input type="text" class="form-control" id="inputBudget" placeholder="">
+                                                        <div class="form-group">
+                                                            <label for="inputBudget" class="col-sm-2 control-label">Budget</label>
+                                                            <div class="col-sm-10">
+                                                                <input type="text" class="form-control" id="inputBudget" placeholder="">
+                                                            </div>
                                                         </div>
-                                                      </div>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <div class="form-group">
-                                                            <label for="inputBudget" class="col-sm-6 control-label">Lease Period</label>
-                                                            <div class="selectstyle col-sm-6 pd0">
+                                                            <label for="inputBudget" class="col-sm-5 control-label">Lease Period</label>
+                                                            <div class="col-sm-7">
                                                                 <select id="s-lease-period">
                                                                     <option value="">Type</option>
                                                                     <option value="">2</option>
@@ -150,12 +217,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-12">
-                                                        
-                                                            <div class=" pull-right ptb30">
-                                                                <button type="button" class="btn btn-cancel" data-dismiss="modal">cancel</button>
-                                                              <button type="submit" class="btn btn-bg-gold enquire-sbm">Submit</button>
-                                                            </div>
-                                                        
+                                                        <div class=" pull-right ptb30 fontregular">
+                                                            <button type="button" class="btn btn-cancel" data-dismiss="modal">cancel</button>
+                                                            <button type="submit" class="btn btn-bg-gold enquire-sbm">Submit</button>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </form>
@@ -172,7 +237,6 @@
                                 <li><a href="#ab-project" data-toggle="tab">Project info</a></li>
                                 <li><a href="#ab-location" data-toggle="tab">Location</a></li>
                                 <li><a href="#ab-photo" data-toggle="tab">Photo Album</a></li>
-
                             </ul>
                             <div class="tab-content">
                                 <!-- ab-unit start -->
@@ -199,7 +263,6 @@
                                     </dl>
                                 </div>
                                 <!-- ab-unit end -->
-
                                 <!-- ab-project start -->
                                 <div class="tab-pane fade" id="ab-project">
                                     <p>The Base Park West is a premium condominium project developed by Sansiri, the leading property developer in Thailand. The condominium has full resort facilities including a gym, swimming pool, laundry room, car park and lobby.</p>
@@ -223,13 +286,11 @@
                                     </dl>
                                 </div>
                                 <!-- ab-project end -->
-
                                 <!-- ab-location start -->
                                 <div class="tab-pane fade" id="ab-location">
                                     <div class="center-block">this is map</div>
                                 </div>
                                 <!-- ab-location end -->
-
                                 <!-- ab-photo start -->
                                 <div class="tab-pane fade" id="ab-photo">
                                     <div class="row">
@@ -287,6 +348,11 @@
         <!-- js start-->
         <link href="css/lightbox.css" rel="stylesheet" type="text/css">
         <script src="js/lightbox.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            $("#s-lease-period").selectpick();
+        });
+        </script>
         <!-- js end-->
         <!-- main end -->
         <!-- footer start -->
@@ -295,16 +361,16 @@
                 <div class="row">
                     <div class="col-xs-12 text-center">
                         <ul class="ul-float text-uppercase">
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Press Room</a></li>
-                            <li><a href="#">site map</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                            <li><a href="PressRoom.html">Press Room</a></li>
+                            <li><a href="SiteMap.html">site map</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 text-right">
                         <ul class="ul-float text-uppercase">
-                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="TermOfUse.html">Terms of Use</a></li>
                             <li>|</li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -315,9 +381,9 @@
     <!-- script start-->
     <script src="js/selectpick.js"></script>
     <script type="text/javascript">
-        $(function() {
-            $("#switch-lang").selectpick();
-        });
+    $(function() {
+        $("#switch-lang").selectpick();
+    });
     </script>
     <!-- script end-->
 </body>

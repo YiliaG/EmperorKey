@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>ForRent</title>
+    <title>HomePage</title>
     <!-- stylesheet start-->
     <link href="css/EK_bootstrap.css" rel="stylesheet">
     <link href="css/font/iconfont.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                                 <div class="col-md-offset-1 col-md-10">
                                     <ul class="nav navbar-nav text-uppercase">
                                         <!-- 處於當前頁面需要在li標籤加上active -->
-                                        <li class="active"><a href="ForRent.html">FOR rent</a></li>
+                                        <li><a href="ForRent.html">FOR rent</a></li>
                                         <li><a href="ThailandGuide.html">thailand guide</a></li>
                                         <li><a href="Blog.html">blog</a></li>
                                         <li><a href="AboutUs.html">about us</a></li>
@@ -144,7 +144,7 @@
             <div class="container">
                 <div class="row pt30">
                     <div class="col-sm-6 col-xs-12">
-                        <h1 class="title-h">Properties For Rent</h1>
+                        <h1 class="title-h">Quick Search</h1>
                     </div>
                     <div class="col-sm-6 col-xs-12 ptb30">
                         <form method="get" class="search-filter input-group pull-right" id="header_search" action="">
@@ -209,81 +209,151 @@
         </div>
         <div class="layout-main pb30">
             <div class="container">
-                <!-- 循環  開始 -->
-                <div class="row rent-list ptb40">
-                    <a href="ForRent-ProView.html" class="col-sm-4 col-xs-12">
-                        <div class="scale"><img src="images/demo/forrent1.jpg" alt=""></div>
-                    </a>
-                    <div class="col-sm-8 col-xs-12">
-                        <h4 class="ptb20">Base Park West #07-02</h4>
-                        <dl class="dl-horizontal fontregular">
-                            <dt>Rental price</dt>
-                            <dd>THB4,000 / night</dd>
-                            <dd>THB 15,000 / month</dd>
-                            <dt>Location</dt>
-                            <dd>Sukhumvit 71, Bangkok</dd>
-                            <dt>Number of bedrooms: </dt>
-                            <dd>1-Bed</dd>
-                            <dt class="img-thumb pt30">
-                                <a href="#"><img src="images/demo/forrent2.jpg" alt=""><img src="images/demo/forrent3.jpg" alt=""><img src="images/demo/forrent4.jpg" alt=""></a>
-                            </dt>
-                            <dd class="pt40">
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-bg-gold enquire" data-toggle="modal" data-target="#enquire-form">ENQUIRE</button>
-                                <a href="#" class="plr20">Find out more...</a>
-                            </dd>
-                        </dl>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1 class="title-h ptb20">Hot Units for you</h1>
                     </div>
-                </div>
-                <!-- 循環  結束 -->
-                <div class="row rent-list ptb40">
-                    <a href="#" class="col-sm-4 col-xs-12">
-                        <div class="scale"><img src="images/demo/forrent2.jpg" alt=""></div>
-                    </a>
-                    <div class="col-sm-8 col-xs-12">
-                        <h4 class="ptb20">Park East #12-09</h4>
-                        <dl class="dl-horizontal fontregular">
-                            <dt>Rental price</dt>
-                            <dd>THB4,000 / night</dd>
-                            <dd>THB 15,000 / month</dd>
-                            <dt>Location</dt>
-                            <dd>Sukhumvit 71, Bangkok</dd>
-                            <dt>Number of bedrooms: </dt>
-                            <dd>1-Bed</dd>
-                            <dt class="img-thumb pt30">
-                                <a href="#"><img src="images/demo/forrent1.jpg" alt=""><img src="images/demo/forrent4.jpg" alt=""><img src="images/demo/forrent2.jpg" alt=""></a>
-                            </dt>
-                            <dd class="pt40">
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-bg-gold enquire" data-toggle="modal" data-target="#enquire-form">ENQUIRE</button>
-                                <a href="#" class="plr20">Find out more...</a>
-                            </dd>
-                        </dl>
+                    <!-- 循環  開始 -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 pb100">
+                        <a href="#">
+                            <div class="scale">
+                                <img src="images/demo/p32_750.jpg" alt="">
+                            </div>
+                            <h4>Base Park West #07-02</h4>
+                            <div class="fontregular text-primary ptb20">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <p><i class="icon icon-pricetag"></i>THB4,000 / night</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p class="pull-right"><i class="icon icon-resize"></i>30sqm</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p><i class="icon icon-bed"></i>1 Bedroom</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p class="pull-right"><i class="icon icon-bath"></i>1 Bathroom</p>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <p><i class="icon icon-attention"></i>Short-term Available</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-bg-gold wall" data-toggle="modal" data-target="#enquire-form">ENQUIRE</button>
+                            </div>
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-transparent wall">Find Out More</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="row rent-list ptb40">
-                    <a href="#" class="col-sm-4 col-xs-12">
-                        <div class="scale"><img src="images/demo/forrent1.jpg" alt=""></div>
-                    </a>
-                    <div class="col-sm-8 col-xs-12">
-                        <h4 class="ptb20">Base Park West #07-02</h4>
-                        <dl class="dl-horizontal">
-                            <dt>Rental price</dt>
-                            <dd>THB4,000 / night</dd>
-                            <dd>THB 15,000 / month</dd>
-                            <dt>Location</dt>
-                            <dd>Sukhumvit 71, Bangkok</dd>
-                            <dt>Number of bedrooms: </dt>
-                            <dd>1-Bed</dd>
-                            <dt class="img-thumb pt30">
-                                <a href="#"><img src="images/demo/forrent2.jpg" alt=""><img src="images/demo/forrent1.jpg" alt=""><img src="images/demo/forrent4.jpg" alt=""></a>
-                            </dt>
-                            <dd class="pt40">
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-bg-gold enquire" data-toggle="modal" data-target="#enquire-form">ENQUIRE</button>
-                                <a href="#" class="plr20">Find out more...</a>
-                            </dd>
-                        </dl>
+                    <!-- 循環  結束 -->
+                    <div class="col-md-4 col-sm-6 col-xs-12 pb100">
+                        <a href="#">
+                            <div class="scale">
+                                <img src="images/demo/p32_750.jpg" alt="">
+                            </div>
+                            <h4>Park East #12-09</h4>
+                            <div class="fontregular text-primary ptb20">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <p><i class="icon icon-pricetag"></i>THB4,000 / night</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p class="pull-right"><i class="icon icon-resize"></i>30sqm</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p><i class="icon icon-bed"></i>1 Bedroom</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p class="pull-right"><i class="icon icon-bath"></i>1 Bathroom</p>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <p><i class="icon icon-attention"></i>Short-term Available</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-bg-gold wall" data-toggle="modal" data-target="#enquire-form">ENQUIRE</button>
+                            </div>
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-transparent wall">Find Out More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 pb100">
+                        <a href="#">
+                            <div class="scale">
+                                <img src="images/demo/p32_750.jpg" alt="">
+                            </div>
+                            <h4>Ocean Near #07-02</h4>
+                            <div class="fontregular text-primary ptb20">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <p><i class="icon icon-pricetag"></i>THB4,000 / night</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p class="pull-right"><i class="icon icon-resize"></i>30sqm</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p><i class="icon icon-bed"></i>1 Bedroom</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p class="pull-right"><i class="icon icon-bath"></i>1 Bathroom</p>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <p><i class="icon icon-attention"></i>Short-term Available</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-bg-gold wall" data-toggle="modal" data-target="#enquire-form">ENQUIRE</button>
+                            </div>
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-transparent wall">Find Out More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 pb100">
+                        <a href="#">
+                            <div class="scale">
+                                <img src="images/demo/p32_750.jpg" alt="">
+                            </div>
+                            <h4>Park East #12-09</h4>
+                            <div class="fontregular text-primary ptb20">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <p><i class="icon icon-pricetag"></i>THB4,000 / night</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p class="pull-right"><i class="icon icon-resize"></i>30sqm</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p><i class="icon icon-bed"></i>1 Bedroom</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p class="pull-right"><i class="icon icon-bath"></i>1 Bathroom</p>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <p><i class="icon icon-attention"></i>Short-term Available</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-bg-gold wall" data-toggle="modal" data-target="#enquire-form">ENQUIRE</button>
+                            </div>
+                            <div class="col-xs-6">
+                                <button type="button" class="btn btn-transparent wall">Find Out More</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Modal -->

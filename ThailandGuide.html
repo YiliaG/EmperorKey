@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>ForRent-View</title>
+    <title>Thailand Guide</title>
     <!-- stylesheet start-->
     <link href="css/EK_bootstrap.css" rel="stylesheet">
     <link href="css/font/iconfont.css" rel="stylesheet">
@@ -33,19 +33,20 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
+                            <a class="navbar-brand" href="HomePage.html"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
                         </div>
                         <!-- Collect the nav links for toggling -->
                         <div class="collapse navbar-collapse col-md-10 col-xs-12" id="navbar-collapse">
                             <div class="row">
                                 <div class="col-md-offset-1 col-md-10">
-                                    <ul class="nav navbar-nav pt40 text-uppercase">
-                                        <li><a href="#">FOR rent</a></li>
-                                        <li class="active"><a href="#">thailand guide</a></li>
-                                        <li><a href="#">blog</a></li>
-                                        <li><a href="#">about us</a></li>
-                                        <li><a href="#">our services</a></li>
-                                        <li><a href="#">subscribe</a></li>
+                                    <ul class="nav navbar-nav text-uppercase">
+                                        <!-- 處於當前頁面需要在li標籤加上active -->
+                                        <li><a href="ForRent.html">FOR rent</a></li>
+                                        <li class="active"><a href="ThailandGuide.html">thailand guide</a></li>
+                                        <li><a href="Blog.html">blog</a></li>
+                                        <li><a href="AboutUs.html">about us</a></li>
+                                        <li><a href="OurServices.html">our services</a></li>
+                                        <li><a href="javascript:void(0)" data-toggle="modal" data-target="#subscribe-form">subscribe</a></li>
                                         <li class="pt10">
                                             <div class="selectstyle pl30">
                                                 <select id="switch-lang">
@@ -55,6 +56,71 @@
                                             </div>
                                         </li>
                                     </ul>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="subscribe-form" abindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <!-- 此處  動態變化 start-->
+                                                    <h4 class="text-white pl30 pt30">Enquire the #BPW001 condo</h4>
+                                                    <!-- 此處  動態變化 end-->
+                                                </div>
+                                                <div class="modal-body pd40">
+                                                    <form class="form-horizontal" role="form" id="rentEnquire">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="first-n" class="col-sm-4 control-label">First Name</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="first-n" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="last-n" class="col-sm-4 control-label">Last Name</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="last-n" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="phone" class="col-sm-4 control-label">Phone</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="phone" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="inputEmail" class="col-sm-4 control-label">Email</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="email" class="form-control" id="inputEmail" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-12 control-label">Message</label>
+                                                                    <div class="col-sm-12">
+                                                                        <textarea class="form-control" rows="6"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class=" pull-right ptb30 fontregular text-center">
+                                                                    <button type="submit" class="btn btn-bg-gold enquire-sbm home-enquire">Submit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- modal end-->
                                 </div>
                                 <div class="col-md-1">
                                     <ul class="navbar-right navIcon">
@@ -73,26 +139,116 @@
             </nav>
         </header>
         <!-- header end -->
-
         <!-- main start -->
         <div class="layout-main">
-            <div class="banner-img"><img src="images/demo/thailand.jpg" alt=""></div>  
-        
+            <div class="banner-img"><img src="images/demo/thailand.jpg" alt=""></div>
             <div class="container">
-                <div class="row pt30">
-                    <div class="col-xs-12"><h1 class="title-h">Thailand Guide</h1></div>
+                <div class="row pt30 pb100">
+                    <div class="col-xs-12">
+                        <h1 class="title-h">Thailand Guide</h1></div>
                     <div class="col-sm-4 col-xs-12">
+                        <div class="panel-group fontregular pt30" id="accordion">
+                            <!-- 循環   開始 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                    Things to see
+                                    <i class="icon icon-down pl30"></i></a>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <ul class="pl30">
+                                            <li><a href="#">Bangkok</a></li>
+                                            <li><a href="#">Phuket</a></li>
+                                            <li><a href="#">Pattaya</a></li>
+                                            <li><a href="#">Chiang Mai</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 循環   結束 -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" class="collapsed">
+                                    Shopping in Bangkok
+                                    <!-- <i class="icon icon-down pl30"></i> --></a>
+                                </div>
+                                <!-- <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="pl30">
+                                            <li><a href="#">Bangkok</a></li>
+                                            <li><a href="#">Phuket</a></li>
+                                            <li><a href="#">Pattaya</a></li>
+                                            <li><a href="#">Chiang Mai</a></li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" class="collapsed">
+                                    What’s on
+                                    <!-- <i class="icon icon-down pl30"></i> --></a>
+                                </div>
+                                <!-- <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="pl30">
+                                            <li><a href="#">Bangkok</a></li>
+                                            <li><a href="#">Phuket</a></li>
+                                            <li><a href="#">Pattaya</a></li>
+                                            <li><a href="#">Chiang Mai</a></li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" class="collapsed">
+                                    Living like a Bangkokian
+                                    <i class="icon icon-down pl30"></i></a>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="pl30">
+                                            <li><a href="#">Bangkok</a></li>
+                                            <li><a href="#">Phuket</a></li>
+                                            <li><a href="#">Pattaya</a></li>
+                                            <li><a href="#">Chiang Mai</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" class="collapsed">
+                                    Practical information
+                                    <i class="icon icon-down pl30"></i></a>
+                                </div>
+                                <div id="collapse5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <ul class="pl30">
+                                            <li><a href="#">Bangkok</a></li>
+                                            <li><a href="#">Phuket</a></li>
+                                            <li><a href="#">Pattaya</a></li>
+                                            <li><a href="#">Chiang Mai</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-8 col-xs-12">
-                        <h2 class="">Bangkok</h2>
-                        <p>A dui nec in scelerisque adipiscing elit consectetur vestibulum taciti vestibulum a nisi nostra a magna ullamcorper a a suspendisse mi neque lobortis. Ullamcorper eu vestibulum condimentum ullamcorper faucibus elementum nec cras nunc adipiscing scelerisque eget massa dui.</p>
-                        <div><img src="images/demo/p32_750.jpg" alt=""></div>
-                        <p>Massa ad euismod ac convallis tempor felis facilisis scelerisque ullamcorper a taciti suspendisse a ad torquent habitasse vivamus suspendisse dignissim nam placerat at sociis consectetur est a scelerisque. Ullamcorper platea integer ut volutpat est mi vestibulum in et eros at nam aliquam dui eu curae a sit. Quis condimentum orci cum vestibulum nascetur suscipit dis mus hendrerit eu et ipsum scelerisque vestibulum a hac tellus aenean parturient. </p>
-                        <p>Etiam vulputate mauris rutrum mollis vulputate nullam montes id mauris fusce cum ac suspendisse nullam condimentum a a. A libero vestibulum vehicula vestibulum nec adipiscing eu rhoncus fringilla tempor parturient a amet dignissim a eu tincidunt ornare odio interdum sem ultricies convallis adipiscing adipiscing curae quisque a.</p>
-                        <p>Purus mi nec aptent aenean consequat adipiscing accumsan etiam torquent vel vestibulum augue ullamcorper est dui imperdiet ac cras porta ad vestibulum at a blandit. Phasellus hac phasellus nisl vulputate malesuada class consequat nisi sociosqu sit nibh lacinia eu tristique bibendum ac fringilla accumsan magna sit malesuada justo justo consectetur a tincidunt dolor mi. Justo ullamcorper justo in nulla maecenas dui eu parturient sodales erat posuere a ultrices tristique parturient suspendisse consectetur dis molestie fringilla semper a nec nullam.</p>
-                        <div><img src="images/demo/p32_750.jpg" alt=""></div>
-                        <p>Vulputate mauris rutrum mollis vulputate nullam montes id mauris fusce cum ac suspendisse nullam condimentum a a. A libero vestibulum vehicula vestibulum nec adipiscing eu rhoncus fringilla tempor parturient a amet dignissim a eu tincidunt ornare odio interdum sem ultricies convallis adipiscing adipiscing curae quisque a.</p>
-                        <p>Purus mi nec aptent aenean consequat adipiscing accumsan etiam torquent vel vestibulum augue ullamcorper est dui imperdiet ac cras porta ad vestibulum at a blandit. Phasellus hac phasellus nisl vulputate malesuada class consequat nisi sociosqu sit nibh lacinia eu tristique bibendum ac fringilla accumsan magna sit malesuada justo justo consectetur a tincidunt dolor mi. Justo ullamcorper justo in nulla maecenas dui eu parturient sodales erat posuere a ultrices tristique parturient suspendisse consectetur dis molestie fringilla semper a nec nullam.</p>
+                        <div class="detail-wrap">
+                            <h2 class="">Bangkok</h2>
+                            <p>A dui nec in scelerisque adipiscing elit consectetur vestibulum taciti vestibulum a nisi nostra a magna ullamcorper a a suspendisse mi neque lobortis. Ullamcorper eu vestibulum condimentum ullamcorper faucibus elementum nec cras nunc adipiscing scelerisque eget massa dui.</p>
+                            <img src="images/demo/p32_750.jpg" alt="">
+                            <p>Massa ad euismod ac convallis tempor felis facilisis scelerisque ullamcorper a taciti suspendisse a ad torquent habitasse vivamus suspendisse dignissim nam placerat at sociis consectetur est a scelerisque. Ullamcorper platea integer ut volutpat est mi vestibulum in et eros at nam aliquam dui eu curae a sit. Quis condimentum orci cum vestibulum nascetur suscipit dis mus hendrerit eu et ipsum scelerisque vestibulum a hac tellus aenean parturient. </p>
+                            <p>Etiam vulputate mauris rutrum mollis vulputate nullam montes id mauris fusce cum ac suspendisse nullam condimentum a a. A libero vestibulum vehicula vestibulum nec adipiscing eu rhoncus fringilla tempor parturient a amet dignissim a eu tincidunt ornare odio interdum sem ultricies convallis adipiscing adipiscing curae quisque a.</p>
+                            <p>Purus mi nec aptent aenean consequat adipiscing accumsan etiam torquent vel vestibulum augue ullamcorper est dui imperdiet ac cras porta ad vestibulum at a blandit. Phasellus hac phasellus nisl vulputate malesuada class consequat nisi sociosqu sit nibh lacinia eu tristique bibendum ac fringilla accumsan magna sit malesuada justo justo consectetur a tincidunt dolor mi. Justo ullamcorper justo in nulla maecenas dui eu parturient sodales erat posuere a ultrices tristique parturient suspendisse consectetur dis molestie fringilla semper a nec nullam.</p>
+                            <img src="images/demo/p32_750.jpg" alt="">
+                            <p>Vulputate mauris rutrum mollis vulputate nullam montes id mauris fusce cum ac suspendisse nullam condimentum a a. A libero vestibulum vehicula vestibulum nec adipiscing eu rhoncus fringilla tempor parturient a amet dignissim a eu tincidunt ornare odio interdum sem ultricies convallis adipiscing adipiscing curae quisque a.</p>
+                            <p>Purus mi nec aptent aenean consequat adipiscing accumsan etiam torquent vel vestibulum augue ullamcorper est dui imperdiet ac cras porta ad vestibulum at a blandit. Phasellus hac phasellus nisl vulputate malesuada class consequat nisi sociosqu sit nibh lacinia eu tristique bibendum ac fringilla accumsan magna sit malesuada justo justo consectetur a tincidunt dolor mi. Justo ullamcorper justo in nulla maecenas dui eu parturient sodales erat posuere a ultrices tristique parturient suspendisse consectetur dis molestie fringilla semper a nec nullam.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -108,16 +264,16 @@
                 <div class="row">
                     <div class="col-xs-12 text-center">
                         <ul class="ul-float text-uppercase">
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Press Room</a></li>
-                            <li><a href="#">site map</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                            <li><a href="PressRoom.html">Press Room</a></li>
+                            <li><a href="SiteMap.html">site map</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 text-right">
                         <ul class="ul-float text-uppercase">
-                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="TermOfUse.html">Terms of Use</a></li>
                             <li>|</li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -128,9 +284,9 @@
     <!-- script start-->
     <script src="js/selectpick.js"></script>
     <script type="text/javascript">
-        $(function() {
-            $("#switch-lang").selectpick();
-        });
+    $(function() {
+        $("#switch-lang").selectpick();
+    });
     </script>
     <!-- script end-->
 </body>

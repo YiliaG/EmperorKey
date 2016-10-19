@@ -33,19 +33,20 @@
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                             </button>
-                            <a class="navbar-brand" href="#"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
+                            <a class="navbar-brand" href="HomePage.html"><img class="brand-img" src="images/logo.png" alt="EMPEROR KEY"></a>
                         </div>
                         <!-- Collect the nav links for toggling -->
                         <div class="collapse navbar-collapse col-md-10 col-xs-12" id="navbar-collapse">
                             <div class="row">
                                 <div class="col-md-offset-1 col-md-10">
-                                    <ul class="nav navbar-nav pt40 text-uppercase">
-                                        <li><a href="#">FOR rent</a></li>
-                                        <li><a href="#">thailand guide</a></li>
-                                        <li><a href="#">blog</a></li>
-                                        <li><a href="#">about us</a></li>
-                                        <li><a href="#">our services</a></li>
-                                        <li><a href="#">subscribe</a></li>
+                                    <ul class="nav navbar-nav text-uppercase">
+                                        <!-- 處於當前頁面需要在li標籤加上active -->
+                                        <li><a href="ForRent.html">FOR rent</a></li>
+                                        <li><a href="ThailandGuide.html">thailand guide</a></li>
+                                        <li><a href="Blog.html">blog</a></li>
+                                        <li><a href="AboutUs.html">about us</a></li>
+                                        <li><a href="OurServices.html">our services</a></li>
+                                        <li><a href="javascript:void(0)" data-toggle="modal" data-target="#subscribe-form">subscribe</a></li>
                                         <li class="pt10">
                                             <div class="selectstyle pl30">
                                                 <select id="switch-lang">
@@ -55,6 +56,71 @@
                                             </div>
                                         </li>
                                     </ul>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="subscribe-form" abindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                                    <!-- 此處  動態變化 start-->
+                                                    <h4 class="text-white pl30 pt30">Enquire the #BPW001 condo</h4>
+                                                    <!-- 此處  動態變化 end-->
+                                                </div>
+                                                <div class="modal-body pd40">
+                                                    <form class="form-horizontal" role="form" id="rentEnquire">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="first-n" class="col-sm-4 control-label">First Name</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="first-n" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="last-n" class="col-sm-4 control-label">Last Name</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="last-n" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="phone" class="col-sm-4 control-label">Phone</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="text" class="form-control" id="phone" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label for="inputEmail" class="col-sm-4 control-label">Email</label>
+                                                                    <div class="col-sm-8">
+                                                                        <input type="email" class="form-control" id="inputEmail" placeholder="">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class="form-group">
+                                                                    <label class="col-sm-12 control-label">Message</label>
+                                                                    <div class="col-sm-12">
+                                                                        <textarea class="form-control" rows="6"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12">
+                                                                <div class=" pull-right ptb30 fontregular text-center">
+                                                                    <button type="submit" class="btn btn-bg-gold enquire-sbm home-enquire">Submit</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- modal end-->
                                 </div>
                                 <div class="col-md-1">
                                     <ul class="navbar-right navIcon">
@@ -77,7 +143,8 @@
         <div class="layout-main pb30">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8 col-xs-12 pt10"><h1 class="title-h">Press Room</h1></div>
+                    <div class="col-sm-8 col-xs-12 pt10">
+                        <h1 class="title-h">Press Room</h1></div>
                     <div class="col-sm-4 col-xs-12 pt30">
                         <form method="get" class="search-filter input-group pull-right" id="header_search" action="">
                             <input type="search" class="form-control bg-input" placeholder="">
@@ -106,10 +173,8 @@
                             </div>
                             <p>A dui eros a ipsum dolor phasellus est tempor ullamcorper a at elit himenaeos vehicula nascetur tincidunt integer non fusce elementum a conubia. Cras scelerisque est curabitur scelerisque dui a facilisi conubia cum vestibulum facilisis luctus consectetur parturient scelerisque enim sapien adipiscing nascetur scelerisque neque a est quis. Suscipit quis amet mi est augue arcu non leo platea potenti parturient a odio sociis volutpat porta. </p>
                             <p>Ipsum a tincidunt ad a scelerisque duis facilisis quis parturient elit consectetur a dui adipiscing elit faucibus faucibus ullamcorper a. Parturient a scelerisque dui scelerisque vestibulum enim feugiat etiam at sem parturient pharetra rhoncus suspendisse hac condimentum nisl curabitur donec consectetur ullamcorper sociis. A fermentum ultrices posuere habitant diam a mus volutpat sem eu luctus scelerisque adipiscing per suscipit a adipiscing amet mauris nec vel torquent sit elementum condimentum cursus. Est pharetra dis gravida ante a a aenean gravida nullam a nisl tellus elementum ullamcorper suspendisse pulvinar parturient interdum scelerisque facilisi ad netus dui augue a proin litora. </p>
-                            
                         </div>
                         <!-- 循環   結束 -->
-
                         <div>
                             <h2 class="pt10">Another article</h2>
                             <p class="pull-left">August 5, 2016</p>
@@ -117,9 +182,9 @@
                             <div class="ptb20">
                                 <img src="images/demo/p21.jpg" alt="">
                             </div>
-                            <p>A dui eros a ipsum dolor phasellus est tempor ullamcorper a at elit himenaeos vehicula nascetur tincidunt integer non fusce elementum a conubia. Cras scelerisque est curabitur scelerisque dui a facilisi conubia cum vestibulum facilisis luctus consectetur parturient scelerisque enim sapien adipiscing nascetur scelerisque neque a est quis. Suscipit quis amet mi est augue arcu non leo platea potenti parturient a odio sociis volutpat porta.  </p>
+                            <p>A dui eros a ipsum dolor phasellus est tempor ullamcorper a at elit himenaeos vehicula nascetur tincidunt integer non fusce elementum a conubia. Cras scelerisque est curabitur scelerisque dui a facilisi conubia cum vestibulum facilisis luctus consectetur parturient scelerisque enim sapien adipiscing nascetur scelerisque neque a est quis. Suscipit quis amet mi est augue arcu non leo platea potenti parturient a odio sociis volutpat porta. </p>
                             <p>Ipsum a tincidunt ad a scelerisque duis facilisis quis parturient elit consectetur a dui adipiscing elit faucibus faucibus ullamcorper a. Parturient a scelerisque dui scelerisque vestibulum enim feugiat etiam at sem parturient pharetra rhoncus suspendisse hac condimentum nisl curabitur donec consectetur ullamcorper sociis. A fermentum ultrices posuere habitant diam a mus volutpat sem eu luctus scelerisque adipiscing per suscipit a adipiscing amet mauris nec vel torquent sit elementum condimentum cursus. Est pharetra dis gravida ante a a aenean gravida nullam a nisl tellus elementum ullamcorper suspendisse pulvinar parturient interdum scelerisque facilisi ad netus dui augue a proin litora. </p>
-                            <p>Vestibulum condimentum donec nam a odio potenti convallis adipiscing sem eu a scelerisque habitant pretium viverra suspendisse quam a leo turpis faucibus mauris vivamus hendrerit placerat vulputate parturient. Dictumst lorem ullamcorper lobortis mi lacus venenatis quam parturient ut ullamcorper sit commodo a vestibulum nec suspendisse maecenas cum in rhoncus libero. In risus amet parturient quisque eget eu ullamcorper adipiscing mus scelerisque a habitant class ut in parturient condimentum pretium ad sem accumsan interdum faucibus. Litora interdum adipiscing eu a condimentum scelerisque urna suspendisse aenean magna aliquet a lorem nam nascetur consequat vivamus pulvinar suscipit pretium phasellus vestibulum ornare. Duis parturient ridiculus conubia ad ante duis adipiscing mi scelerisque tincidunt placerat consectetur sit eleifend etiam facilisi convallis tincidunt enim vestibulum facilisis auctor parturient.  </p>
+                            <p>Vestibulum condimentum donec nam a odio potenti convallis adipiscing sem eu a scelerisque habitant pretium viverra suspendisse quam a leo turpis faucibus mauris vivamus hendrerit placerat vulputate parturient. Dictumst lorem ullamcorper lobortis mi lacus venenatis quam parturient ut ullamcorper sit commodo a vestibulum nec suspendisse maecenas cum in rhoncus libero. In risus amet parturient quisque eget eu ullamcorper adipiscing mus scelerisque a habitant class ut in parturient condimentum pretium ad sem accumsan interdum faucibus. Litora interdum adipiscing eu a condimentum scelerisque urna suspendisse aenean magna aliquet a lorem nam nascetur consequat vivamus pulvinar suscipit pretium phasellus vestibulum ornare. Duis parturient ridiculus conubia ad ante duis adipiscing mi scelerisque tincidunt placerat consectetur sit eleifend etiam facilisi convallis tincidunt enim vestibulum facilisis auctor parturient. </p>
                             <p>Potenti a sem nullam ultricies ornare consectetur in nec vehicula sociosqu adipiscing dis id praesent penatibus parturient consectetur condimentum ad condimentum facilisis urna cras dis scelerisque feugiat etiam. Lorem dictumst nunc a ut hac dapibus primis eget erat tempus augue hac per elit suspendisse nullam eu posuere odio dui condimentum malesuada a. Ultrices nunc dis quis quis auctor suspendisse eu vivamus a mollis etiam dolor condimentum urna. Dis interdum parturient accumsan a feugiat dis justo ullamcorper venenatis potenti nascetur adipiscing turpis aptent quam imperdiet a suspendisse facilisi ut facilisi parturient.</p>
                         </div>
                         <div>
@@ -129,22 +194,15 @@
                             <div class="ptb20">
                                 <img src="images/demo/p21.jpg" alt="">
                             </div>
-                            <p>A dui eros a ipsum dolor phasellus est tempor ullamcorper a at elit himenaeos vehicula nascetur tincidunt integer non fusce elementum a conubia. Cras scelerisque est curabitur scelerisque dui a facilisi conubia cum vestibulum facilisis luctus consectetur parturient scelerisque enim sapien adipiscing nascetur scelerisque neque a est quis. Suscipit quis amet mi est augue arcu non leo platea potenti parturient a odio sociis volutpat porta.  </p>
+                            <p>A dui eros a ipsum dolor phasellus est tempor ullamcorper a at elit himenaeos vehicula nascetur tincidunt integer non fusce elementum a conubia. Cras scelerisque est curabitur scelerisque dui a facilisi conubia cum vestibulum facilisis luctus consectetur parturient scelerisque enim sapien adipiscing nascetur scelerisque neque a est quis. Suscipit quis amet mi est augue arcu non leo platea potenti parturient a odio sociis volutpat porta. </p>
                             <p>Ipsum a tincidunt ad a scelerisque duis facilisis quis parturient elit consectetur a dui adipiscing elit faucibus faucibus ullamcorper a. Parturient a scelerisque dui scelerisque vestibulum enim feugiat etiam at sem parturient pharetra rhoncus suspendisse hac condimentum nisl curabitur donec consectetur ullamcorper sociis. A fermentum ultrices posuere habitant diam a mus volutpat sem eu luctus scelerisque adipiscing per suscipit a adipiscing amet mauris nec vel torquent sit elementum condimentum cursus. Est pharetra dis gravida ante a a aenean gravida nullam a nisl tellus elementum ullamcorper suspendisse pulvinar parturient interdum scelerisque facilisi ad netus dui augue a proin litora. </p>
-                            <p>Vestibulum condimentum donec nam a odio potenti convallis adipiscing sem eu a scelerisque habitant pretium viverra suspendisse quam a leo turpis faucibus mauris vivamus hendrerit placerat vulputate parturient. Dictumst lorem ullamcorper lobortis mi lacus venenatis quam parturient ut ullamcorper sit commodo a vestibulum nec suspendisse maecenas cum in rhoncus libero. In risus amet parturient quisque eget eu ullamcorper adipiscing mus scelerisque a habitant class ut in parturient condimentum pretium ad sem accumsan interdum faucibus. Litora interdum adipiscing eu a condimentum scelerisque urna suspendisse aenean magna aliquet a lorem nam nascetur consequat vivamus pulvinar suscipit pretium phasellus vestibulum ornare. Duis parturient ridiculus conubia ad ante duis adipiscing mi scelerisque tincidunt placerat consectetur sit eleifend etiam facilisi convallis tincidunt enim vestibulum facilisis auctor parturient.  </p>
+                            <p>Vestibulum condimentum donec nam a odio potenti convallis adipiscing sem eu a scelerisque habitant pretium viverra suspendisse quam a leo turpis faucibus mauris vivamus hendrerit placerat vulputate parturient. Dictumst lorem ullamcorper lobortis mi lacus venenatis quam parturient ut ullamcorper sit commodo a vestibulum nec suspendisse maecenas cum in rhoncus libero. In risus amet parturient quisque eget eu ullamcorper adipiscing mus scelerisque a habitant class ut in parturient condimentum pretium ad sem accumsan interdum faucibus. Litora interdum adipiscing eu a condimentum scelerisque urna suspendisse aenean magna aliquet a lorem nam nascetur consequat vivamus pulvinar suscipit pretium phasellus vestibulum ornare. Duis parturient ridiculus conubia ad ante duis adipiscing mi scelerisque tincidunt placerat consectetur sit eleifend etiam facilisi convallis tincidunt enim vestibulum facilisis auctor parturient. </p>
                             <p>Potenti a sem nullam ultricies ornare consectetur in nec vehicula sociosqu adipiscing dis id praesent penatibus parturient consectetur condimentum ad condimentum facilisis urna cras dis scelerisque feugiat etiam. Lorem dictumst nunc a ut hac dapibus primis eget erat tempus augue hac per elit suspendisse nullam eu posuere odio dui condimentum malesuada a. Ultrices nunc dis quis quis auctor suspendisse eu vivamus a mollis etiam dolor condimentum urna. Dis interdum parturient accumsan a feugiat dis justo ullamcorper venenatis potenti nascetur adipiscing turpis aptent quam imperdiet a suspendisse facilisi ut facilisi parturient.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- select js start-->
-        <script type="text/javascript">
-        $(function() {
-            $("#s-city , #s-project,#s-type,#s-room,#s-rental-value,#s-terms,#s-lease-period").selectpick();
-        });
-        </script>
-        <!-- select js end-->
         <!-- main end -->
         <!-- footer start -->
         <footer class="ek-footer footer">
@@ -152,17 +210,16 @@
                 <div class="row">
                     <div class="col-xs-12 text-center">
                         <ul class="ul-float text-uppercase">
-                            <li><a href="#">Contact Us</a></li>
-                            <li class="active"><a href="#">Press Room</a></li>
-                            <li><a href="#">site map</a></li>
+                            <li><a href="ContactUs.html">Contact Us</a></li>
+                            <li class="active"><a href="PressRoom.html">Press Room</a></li>
+                            <li><a href="SiteMap.html">site map</a></li>
                         </ul>
                     </div>
                     <div class="col-xs-12 text-right">
                         <ul class="ul-float text-uppercase">
-                            <!-- 處於當前頁面需要在li標籤加上active -->
-                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="TermOfUse.html">Terms of Use</a></li>
                             <li>|</li>
-                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="PrivacyPolicy.html">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
