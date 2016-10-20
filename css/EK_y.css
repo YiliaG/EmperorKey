@@ -7,6 +7,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'montserrat-semibold';
+    src: url('../css/font/Montserrat-SemiBold.eot');
+    src: url('../css/font/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'), url('../css/font/Montserrat-SemiBold.woff2') format('woff2'), url('../css/font/Montserrat-SemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'montserratregular';
@@ -23,7 +30,36 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../css/font/Helvetica.eot');
+    src: url('../css/font/Helvetica.eot?#iefix') format('embedded-opentype'), url('../css/font/Helvetica.woff2') format('woff2'), url('../css/font/Helvetica.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../css/font/Helvetica-Bold.eot');
+    src: url('../css/font/Helvetica-Bold.eot?#iefix') format('embedded-opentype'), url('../css/font/Helvetica-Bold.woff2') format('woff2'), url('../css/font/Helvetica-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../css/font/HelveticaNeue.eot');
+    src: url('../css/font/HelveticaNeue.eot?#iefix') format('embedded-opentype'), url('../css/font/HelveticaNeue.woff2') format('woff2'), url('../css/font/HelveticaNeue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../css/font/HelveticaNeue-Bold.eot');
+    src: url('../css/font/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'), url('../css/font/HelveticaNeue-Bold.woff2') format('woff2'), url('../css/font/HelveticaNeue-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 .fontbold {
     font-family: 'montserratbold'!important;
 }
@@ -35,8 +71,23 @@
 .fontlight {
     font-family: 'montserratlight'!important;
 }
-
-
+.font-sb{
+    font-family: 'montserrat-semibold';
+}
+.font-h{
+    font-family: 'Helvetica'!important;
+}
+.font-hb{
+    font-family: 'Helvetica'!important;
+    font-weight: bold;
+}
+.font-hn{
+    font-family: 'HelveticaNeue'!important;
+}
+.font-hnb{
+    font-family: 'HelveticaNeue'!important;
+    font-weight: bold;
+}
 /*******  字體導入 e *******/
 
 .ek-layout-wrapper {
@@ -332,7 +383,17 @@ a[class^="col-"] {
     /*width: 100px;*/
     border-radius: 0;
 }
+.text-error{
+    color: #b21515!important;
 
+}
+.errordiv{
+    text-align: center;
+    display: none;
+}
+.errordiv.check-info{
+    display: block;
+}
 .img-thumb img {
     width: 45px;
     height: 45px;
@@ -354,13 +415,18 @@ a[class^="col-"] {
 
 .enquire-sbm {
     background: #d8c9ae;
+    width: 140px;
     margin-left: 40px;
     color: #606060;
 }
-
+.contact-sbm{
+    background-color: #eedabe;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #606060;
+}
 .home-enquire {
     margin-left: 0;
-    width: 140px;
 }
 
 .modal.fade {
@@ -464,12 +530,8 @@ form [class^="col-"] {
     background-color: #f9f8f5;
 }
 
-.form-transparent .selectpick_div_box {
+.form-transparent .select2-selection__rendered {
     background-color: #f9f8f5;
-}
-
-.form-transparent .selectpick_div:hover {
-    border: 1px solid transparent;
 }
 
 .collapsed {
@@ -496,6 +558,9 @@ form [class^="col-"] {
     font-size: 12px;
 }
 
+.icon-share{
+    font-size: 20px;
+}
 /***** media query  s*****/
 
 @media (max-width: 768px) {
@@ -547,3 +612,24 @@ form [class^="col-"] {
 
 
 /***** media query  e*****/
+
+.select2{
+    width: 100%!important;
+}
+:focus {
+    outline: 0;
+}
+.selectstyle{
+    margin-top: 10px;
+}
+.selectstyle .select2-container--default .select2-selection--single{
+    background-color: transparent;
+}
+.lang-w{
+    width: 130px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+.lang-w  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #977f52;
+}

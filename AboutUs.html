@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>About Us</title>
     <!-- stylesheet start-->
-    <link href="css/EK_bootstrap.css" rel="stylesheet">
     <link href="css/font/iconfont.css" rel="stylesheet">
-    <link href="css/selectpick.css" rel="stylesheet">
+    <link href="css/select2.css" rel="stylesheet" type="text/css">
+    <link href="css/EK_bootstrap.css" rel="stylesheet">
     <link href="css/EK_y.css" rel="stylesheet">
     <!-- stylesheet end-->
     <!-- script start-->
@@ -47,9 +47,9 @@
                                         <li class="active"><a href="AboutUs.html">about us</a></li>
                                         <li><a href="OurServices.html">our services</a></li>
                                         <li><a href="javascript:void(0)" data-toggle="modal" data-target="#subscribe-form">subscribe</a></li>
-                                        <li class="pt10">
-                                            <div class="selectstyle pl30">
-                                                <select id="switch-lang">
+                                        <li>
+                                            <div class="pl30 text-gold lang-w">
+                                                <select class="select2-single" id="switch-lang">
                                                     <option value="">ENGLISH</option>
                                                     <option value="">CHINA</option>
                                                 </select>
@@ -62,16 +62,14 @@
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                                                    <!-- 此處  動態變化 start-->
-                                                    <h4 class="text-white pl30 pt30">Enquire the #BPW001 condo</h4>
-                                                    <!-- 此處  動態變化 end-->
+                                                    <h4 class="text-white pl30 pt30">Subscription</h4>
                                                 </div>
                                                 <div class="modal-body pd40">
                                                     <form class="form-horizontal" role="form" id="rentEnquire">
                                                         <div class="row">
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
-                                                                    <label for="first-n" class="col-sm-4 control-label">First Name</label>
+                                                                    <label for="first-n" class="col-sm-4 control-label">First Name*</label>
                                                                     <div class="col-sm-8">
                                                                         <input type="text" class="form-control" id="first-n" placeholder="">
                                                                     </div>
@@ -87,7 +85,7 @@
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
-                                                                    <label for="phone" class="col-sm-4 control-label">Phone</label>
+                                                                    <label for="phone" class="col-sm-4 control-label">Phone*</label>
                                                                     <div class="col-sm-8">
                                                                         <input type="text" class="form-control" id="phone" placeholder="">
                                                                     </div>
@@ -95,7 +93,7 @@
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
-                                                                    <label for="inputEmail" class="col-sm-4 control-label">Email</label>
+                                                                    <label for="inputEmail" class="col-sm-4 control-label">Email*</label>
                                                                     <div class="col-sm-8">
                                                                         <input type="email" class="form-control" id="inputEmail" placeholder="">
                                                                     </div>
@@ -108,6 +106,11 @@
                                                                         <textarea class="form-control" rows="6"></textarea>
                                                                     </div>
                                                                 </div>
+                                                            </div>
+                                                            <!-- 检测必填项是否填写正确，如不正确，提示对应的错误信息 -->
+                                                            <!-- 错误动态添加 check-info -->
+                                                            <div class="errordiv check-info" id="subscribe-error">
+                                                                <label class="text-error">First Name / Phone /Email Error </label>
                                                             </div>
                                                             <div class="col-sm-12">
                                                                 <div class=" pull-right ptb30 fontregular text-center">
@@ -210,10 +213,12 @@
         <!-- footer end -->
     </div>
     <!-- script start-->
-    <script src="js/selectpick.js"></script>
+    <script src="js/select2.min.js"></script>
     <script type="text/javascript">
-    $(function() {
-        $("#switch-lang").selectpick();
+    $(document).ready(function() {
+        $(".select2-single").select2({
+            minimumResultsForSearch: Infinity
+        });
     });
     </script>
     <!-- script end-->

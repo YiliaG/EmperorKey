@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>ForRent</title>
     <!-- stylesheet start-->
-    <link href="css/font/iconfont.css" rel="stylesheet">
-    <link href="css/select2.css" rel="stylesheet" type="text/css">
     <link href="css/EK_bootstrap.css" rel="stylesheet">
+    <link href="css/font/iconfont.css" rel="stylesheet">
+    <link href="css/selectpick.css" rel="stylesheet">
     <link href="css/EK_y.css" rel="stylesheet">
     <!-- stylesheet end-->
     <!-- script start-->
@@ -47,9 +47,9 @@
                                         <li><a href="AboutUs.html">about us</a></li>
                                         <li><a href="OurServices.html">our services</a></li>
                                         <li><a href="javascript:void(0)" data-toggle="modal" data-target="#subscribe-form">subscribe</a></li>
-                                        <li>
-                                            <div class="pl30 text-gold lang-w">
-                                                <select class="select2-single" id="switch-lang">
+                                        <li class="pt10">
+                                            <div class="selectstyle pl30">
+                                                <select id="switch-lang">
                                                     <option value="">ENGLISH</option>
                                                     <option value="">CHINA</option>
                                                 </select>
@@ -107,11 +107,6 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <!-- 检测必填项是否填写正确，如不正确，提示对应的错误信息 -->
-                                                            <!-- 错误动态添加 check-info -->
-                                                            <div class="errordiv check-info" id="subscribe-error">
-                                                                <label class="text-error">First Name / Phone /Email Error </label>
-                                                            </div>
                                                             <div class="col-sm-12">
                                                                 <div class=" pull-right ptb30 fontregular text-center">
                                                                     <button type="submit" class="btn btn-bg-gold enquire-sbm home-enquire">Submit</button>
@@ -162,13 +157,13 @@
                 <div class="row ptb20 fontregular">
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="selectstyle">
-                            <select class="select2-single" id="s-city">
+                            <select id="s-city">
                                 <option value="">ALL Cities</option>
                                 <option value="">thailand</option>
                             </select>
                         </div>
                         <div class="selectstyle">
-                            <select class="select2-single" id="s-project">
+                            <select id="s-project">
                                 <option value="">Projects</option>
                                 <option value="">1</option>
                             </select>
@@ -176,13 +171,13 @@
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="selectstyle">
-                            <select class="select2-single" id="s-type">
+                            <select id="s-type">
                                 <option value="">Type</option>
                                 <option value="">2</option>
                             </select>
                         </div>
                         <div class="selectstyle">
-                            <select class="select2-single" id="s-room">
+                            <select id="s-room">
                                 <option value="">Bedrooms</option>
                                 <option value="">3</option>
                             </select>
@@ -190,13 +185,13 @@
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="selectstyle">
-                            <select class="select2-single" id="s-rental-value">
+                            <select id="s-rental-value">
                                 <option value="">Rental Value</option>
                                 <option value="">2</option>
                             </select>
                         </div>
                         <div class="selectstyle">
-                            <select class="select2-single" id="s-terms">
+                            <select id="s-terms">
                                 <option value="">Lease Terms</option>
                                 <option value="">3</option>
                             </select>
@@ -347,9 +342,9 @@
                                             <div class="form-group">
                                                 <label for="inputBudget" class="col-sm-5 control-label">Lease Period</label>
                                                 <div class="col-sm-7">
-                                                    <select class="select2-single form-control" id="inputBudget">
-                                                        <option value="800">800</option>
-                                                        <option value="1000">1000</option>
+                                                    <select id="s-lease-period">
+                                                        <option value="">6 month</option>
+                                                        <option value="">12 month</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -357,7 +352,7 @@
                                         <!-- 检测必填项是否填写正确，如不正确，提示对应的错误信息 -->
                                         <!-- 错误动态添加 check-info -->
                                         <div class="errordiv check-info" id="enquire-error">
-                                            <label class="text-error">Name / Tel /Email/Budget Error/Enquired </label>
+                                            <label class="text-error">Name / Tel /Email/Budget  Error/Enquired </label>
                                         </div>
                                         <div class="col-sm-12">
                                             <div class=" pull-right ptb30 fontregular">
@@ -374,6 +369,13 @@
                 <!-- modal end-->
             </div>
         </div>
+        <!-- select js start-->
+        <script type="text/javascript">
+        $(function() {
+            $("#s-city,#s-project,#s-type,#s-room,#s-rental-value,#s-terms,#s-lease-period").selectpick();
+        });
+        </script>
+        <!-- select js end-->
         <!-- main end -->
         <!-- footer start -->
         <footer class="ek-footer footer">
@@ -399,12 +401,10 @@
         <!-- footer end -->
     </div>
     <!-- script start-->
-    <script src="js/select2.min.js"></script>
+    <script src="js/selectpick.js"></script>
     <script type="text/javascript">
-    $(document).ready(function() {
-        $(".select2-single").select2({
-            minimumResultsForSearch: Infinity
-        });
+    $(function() {
+        $("#switch-lang").selectpick();
     });
     </script>
     <!-- script end-->
