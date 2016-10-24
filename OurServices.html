@@ -15,6 +15,14 @@
     <!-- script start-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".select2-single").select2({
+            minimumResultsForSearch: Infinity
+        });
+    });
+    </script>
     <!-- script end-->
 </head>
 
@@ -255,16 +263,6 @@
         </footer>
         <!-- footer end -->
     </div>
-    <!-- script start-->
-    <script src="js/select2.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function() {
-        $(".select2-single").select2({
-            minimumResultsForSearch: Infinity
-        });
-    });
-    </script>
-    <!-- script end-->
 </body>
 
 </html>
