@@ -113,7 +113,7 @@
                                                                 <label class="text-error">First Name / Phone /Email Error </label>
                                                             </div>
                                                             <div class="col-sm-12">
-                                                                <div class=" pull-right ptb30 fontregular text-center">
+                                                                <div class=" pull-right ptb20 fontregular text-center">
                                                                     <button type="submit" class="btn btn-bg-gold enquire-sbm home-enquire">Submit</button>
                                                                 </div>
                                                             </div>
@@ -193,7 +193,7 @@
                         
                     </div>
                 </div>
-                <div class="width90 pt30">
+                <div class="width80 pt30">
                     <h4 class="ptb20">Contact us by email</h4>
                     <form class="form-horizontal" role="form" id="contact-form">
                         <div class="pd40 border form-transparent">
@@ -234,7 +234,7 @@
                                     <div class="form-group">
                                         <label for="s-country" class="col-sm-2 control-label">Country *</label>
                                         <div class="col-sm-4">
-                                            <select class="select2-single" id="s-country">
+                                            <select class="country-select" id="s-country">
                                                 <option value="">Please select</option>
                                                 <option value="">2</option>
                                             </select>
@@ -290,6 +290,11 @@
         <!-- js start -->
         <link href="css/lightbox.css" rel="stylesheet" type="text/css">
         <script src="js/lightbox.min.js"></script>
+        <script type="text/javascript">
+    $(document).ready(function() {
+        $(".country-select").select2();
+    });
+    </script>
         <!-- js end -->
         <!-- main end -->
         <!-- footer start -->
