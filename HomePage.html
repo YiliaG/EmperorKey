@@ -15,7 +15,6 @@
     <!-- script start-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    
     <!-- 此插件需放與頭部，否則將影響加載時的樣式 -->
     <script src="js/select2.min.js"></script>
     <script type="text/javascript">
@@ -477,7 +476,41 @@
             </div>
         </footer>
         <!-- footer end -->
+
+        <!-- loading div start -->
+            <!-- <div class="loading" id="load-div">
+                <div>
+                    <h1><i class="icon icon-spin icon-spinner"></i> LOADING...</h1>
+                </div>
+            </div> -->
+        <!-- loading div end -->
+
     </div>
+    <a id="scrollUp" href="javascript:void(0)" style=" position: fixed; z-index: 2147483647;"></a>
+ 
+    <script type="text/javascript">
+    $(document).ready(function() {
+        //首先将#scrollUp隐藏
+        $("#scrollUp").hide();
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function() {
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 100) {
+                    $("#scrollUp").fadeIn(1000);
+                } else {
+                    $("#scrollUp").fadeOut(1000);
+                }
+            });
+            //当点击跳转链接后，回到页面顶部位置
+            $("#scrollUp").click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
+        });
+    });
+    </script>
 </body>
 
 </html>

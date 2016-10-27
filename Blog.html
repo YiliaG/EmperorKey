@@ -177,28 +177,32 @@
                         </a>
                     </div>
                     <div class="col-md-3  col-md-offset-1 col-sm-4 hidden-xs">
-                        <h3 class="text-black hr">Categories</h3>
-                        <ul>
-                            <li><a href="#">Topic 1 <span>(42)</span></a></li>
-                            <li><a href="#">Topic 2 <span>(21)</span></a></li>
-                            <li><a href="#">Topic 3 <span>(1)</span></a></li>
-                            <li><a href="#">Topic 4 <span>(5)</span></a></li>
-                        </ul>
-                        <h3 class="text-black hr">Arhives</h3>
-                        <ul>
-                            <li><a href="#">February 2016</a></li>
-                            <li><a href="#">January 2016</a></li>
-                            <li><a href="#">December 2015</a></li>
-                            <li><a href="#">November 2015</a></li>
-                            <li><a href="#">October 2015</a></li>
-                            <li><a href="#">September 2015</a></li>
-                            <li><a href="#">August 2015</a></li>
-                            <li><a href="#">July 2015</a></li>
-                            <li><a href="#">June 2015</a></li>
-                            <li><a href="#">May 2015</a></li>
-                            <li><a href="#">April 2015</a></li>
-                            <li><a href="#">March 2015</a></li>
-                        </ul>
+                        <div>
+                            <h3 class="text-black hr">Categories</h3>
+                            <ul>
+                                <li><a href="#">Topic 1 <span>(42)</span></a></li>
+                                <li><a href="#">Topic 2 <span>(21)</span></a></li>
+                                <li><a href="#">Topic 3 <span>(1)</span></a></li>
+                                <li><a href="#">Topic 4 <span>(5)</span></a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-black hr">Arhives</h3>
+                            <ul>
+                                <li><a href="#">February 2016</a></li>
+                                <li><a href="#">January 2016</a></li>
+                                <li><a href="#">December 2015</a></li>
+                                <li><a href="#">November 2015</a></li>
+                                <li><a href="#">October 2015</a></li>
+                                <li><a href="#">September 2015</a></li>
+                                <li><a href="#">August 2015</a></li>
+                                <li><a href="#">July 2015</a></li>
+                                <li><a href="#">June 2015</a></li>
+                                <li><a href="#">May 2015</a></li>
+                                <li><a href="#">April 2015</a></li>
+                                <li><a href="#">March 2015</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="row pt50">
@@ -243,6 +247,31 @@
         </footer>
         <!-- footer end -->
     </div>
+    <a id="scrollUp" href="javascript:void(0)" style=" position: fixed; z-index: 2147483647;"></a>
+ 
+    <script type="text/javascript">
+    $(document).ready(function() {
+        //首先将#scrollUp隐藏
+        $("#scrollUp").hide();
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function() {
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > 100) {
+                    $("#scrollUp").fadeIn(1000);
+                } else {
+                    $("#scrollUp").fadeOut(1000);
+                }
+            });
+            //当点击跳转链接后，回到页面顶部位置
+            $("#scrollUp").click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
+        });
+    });
+    </script>
 </body>
 
 </html>
