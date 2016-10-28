@@ -148,6 +148,7 @@
     width: 20px; 
     top: 0;
     color: #606060;
+    font-size: 12px;
     font-family:"iconfont" !important;}
     .select2-container--default .select2-selection--single .select2-selection__arrow b:before {
       content: "\e607";    

@@ -101,121 +101,15 @@
 
 /*******  字體導入 e *******/
 
+
+/***** 通用  s*****/
+
 :focus {
     outline: 0;
 }
 
-.ek-layout-wrapper {
-    max-width: 1600px;
-    min-width: 320px;
-    width: 100%;
-}
-
-.layout-main {
-    background-color: #fff;
-}
-
-.ek-header,
-.ek-footer {
-    background: #e1dacb;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.navbar-nav .selectpick_div_box {
-    background: #faf9f6;
-    width: 90px;
-    color: #977f52;
-}
-
-.navbar-nav .selectpick_options {
-    width: 90px!important;
-}
-
-.navIcon .icon {
-    font-size: 24px;
-    padding-right: 30px;
-}
-
-.nav.navbar-nav {
-    padding-top: 40px;
-}
-
-.bg-input {
-    background: rgba(225, 218, 203, 0.2)!important;
-}
-
-.bg-gray {
-    background: #f6f4ef;
-}
-
-.bg-white {
-    background: #fff;
-}
-
-.opacity0 {
-    opacity: 0;
-}
-
-.list-disc li:before {
-    content: "";
-    display: inline-block;
-    width: 3px;
-    height: 3px;
-    background-color: #606060;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.list-decimal>li {
-    list-style: decimal;
-    margin-top: 30px;
-}
-
-.list-lower-latin li {
-    list-style: lower-latin;
-    margin-left: 30px;
-}
-
-.list-lower-roman li {
-    list-style: lower-roman;
-}
-
-
-/***** footer  s*****/
-
-.ul-float li {
-    display: inline-block;
-    padding: 10px;
-}
-
-.ul-float li.active a {
-    color: #977f52;
-}
-
-.footer a {
-    color: #606060;
-    font-size: 12px;
-    font-family: "montserratregular";
-}
-
-.footer a:hover {
-    color: #977f52;
-}
-
-
-/***** footer  e*****/
-
-
-/***** 通用  s*****/
-
 ul {
-    padding-left: 0;
-}
-
-ul,
-ul li {
-    list-style: none;
+    padding-left: 20px;
 }
 
 .pd0 {
@@ -380,6 +274,48 @@ a[class^="col-"] {
     padding-bottom: 15px;
 }
 
+.bg-input {
+    background: rgba(225, 218, 203, 0.2)!important;
+}
+
+.bg-gray {
+    background: #f6f4ef;
+}
+
+.bg-white {
+    background: #fff;
+}
+
+.opacity0 {
+    opacity: 0;
+}
+
+.list-disc li {
+    list-style: none;
+}
+
+.list-disc li:before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: #606060;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.list-decimal>li {
+    margin-top: 30px;
+}
+
+.list-lower-latin li {
+    list-style: lower-latin;
+}
+
+.list-lower-roman li {
+    list-style: lower-roman;
+}
+
 
 /***** 通用  e*****/
 
@@ -431,6 +367,81 @@ a[class^="col-"] {
 
 
 /***** select  e*****/
+
+
+/***** header  s *****/
+
+.ek-layout-wrapper {
+    max-width: 1600px;
+    min-width: 320px;
+    width: 100%;
+}
+
+.layout-main {
+    background-color: #fff;
+}
+
+.ek-header,
+.ek-footer {
+    background: #e1dacb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-nav .selectpick_div_box {
+    background: #faf9f6;
+    width: 90px;
+    color: #977f52;
+}
+
+.navbar-nav .selectpick_options {
+    width: 90px!important;
+}
+
+.navIcon li {
+    list-style: none;
+}
+
+.navIcon .icon {
+    font-size: 24px;
+    padding-right: 30px;
+}
+
+.nav.navbar-nav {
+    padding-top: 40px;
+}
+
+
+/***** header  e *****/
+
+
+/***** footer  s*****/
+
+.ul-float {
+    padding-left: 0;
+}
+
+.ul-float li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.ul-float li.active a {
+    color: #977f52;
+}
+
+.footer a {
+    color: #606060;
+    font-size: 12px;
+    font-family: "montserratregular";
+}
+
+.footer a:hover {
+    color: #977f52;
+}
+
+
+/***** footer  e*****/
 
 
 /***** forrent  s*****/
@@ -626,6 +637,11 @@ form [class^="col-"] {
 
 .panel-heading .icon {
     color: #977f52;
+    font-size: 12px;
+}
+
+.panel-body li {
+    list-style: none;
 }
 
 .detail-wrap img {
@@ -678,6 +694,7 @@ form [class^="col-"] {
 
 
 /***** Back-to-Top  e*****/
+
 
 /***** Loading  s*****/
 
@@ -769,22 +786,23 @@ form [class^="col-"] {
 
 /***** Loading  e*****/
 
+
 /***** Infinite Load  s*****/
+
 .load-bg {
     text-align: center;
     background-color: #977f52;
 }
 
 .load-more {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
+    font-size: 30px;
+    width: 100%;
 }
 
-.load-more p {
-    padding: 0;
-    font-size: 30px;
-}
+
 /***** Infinite Load  e*****/
+
 
 /***** media query  s*****/
 
@@ -853,6 +871,3 @@ form [class^="col-"] {
 
 
 /***** media query  e*****/
-
-
-
